@@ -1,0 +1,128 @@
+.document {
+	background-color: $darkBlue;
+	padding-bottom: 75px;
+	@include to(1200px){ 
+		padding-bottom: 60px;
+	}
+	// @include to(767px){ 
+	// 	padding-bottom: 40px;
+	// }
+	// &__wrap {
+	// 	max-width: 1100px;
+	// 	padding: 0 60px 0 20px;
+	// 	margin: 0 auto;
+	// 	display: flex;
+	// 	padding-bottom: 40px;
+	// 	height: 450px;
+	// 	@include to(767px){ 
+	// 		flex-direction: column;
+	// 		padding: 0;
+	// 		height: auto;
+	// 	}
+	// }
+	// &__col-sm {
+	// 	width: 19%;
+	// 	@include to(767px){ 
+	// 		width: 100%;
+	// 		display: flex;
+	// 	}
+	// }
+	// &__col-lg {
+	// 	width: 81%;
+	// 	@include to(767px){ 
+	// 		width: 100%;
+	// 		height: 250px;
+	// 	}
+	// }
+}
+
+.document-list {
+	overflow: hidden;
+	position: relative;
+	&__in {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    opacity: 0;
+	    visibility: hidden;
+	    width: 100%;
+	    height: 100%;
+		overflow-y: scroll;
+		// height: 690px;
+		padding-right: 95px;
+		@include to(1200px){ 
+			padding-right: 20px;
+		}
+		// @include to(767px){ 
+		// 	padding-right: 20px;
+		// }
+		&::-webkit-scrollbar-thumb {
+			background: $yellow;
+		}
+		&::-webkit-scrollbar-thumb {
+			-webkit-box-shadow: none;
+		}
+		&::selection {
+				background-color: $yellow;
+			color: #fff;
+		}
+		&::-webkit-scrollbar {
+			width: 3px;
+		}
+		&.is-active {
+			opacity: 1;
+			visibility: visible;
+			position: relative;
+		}
+	}
+}
+.document-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 0;
+	border-top: 1px solid $text;
+	@include to(1200px){ 
+		padding: 30px 42px 30px 0;
+	}
+	@include to(767px){ 
+		padding: 18px 0;
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+	}
+	&__date {
+		letter-spacing: 0.1em;
+		color: $text;
+		font-size: 12px;
+		@include to(1200px){ 
+			font-size: 14px;
+		}
+		@include to(767px){ 
+			font-size: 10px;
+		}
+
+	}
+	&__name {
+		font-size: 22px;
+		font-family: $default-font2;
+		color: $lightWhite;
+		margin-left: 23px;
+		margin-right: 25px;
+		@include to(1200px){ 
+			font-size: 18px;
+		}
+		@include to(767px){ 
+			font-size: 12px;
+		}
+	}
+	&__icon {
+		justify-self: end;
+		cursor: pointer;
+		flex-shrink: 0;
+		@include to(767px){ 
+			display: none;
+		}
+	}
+}

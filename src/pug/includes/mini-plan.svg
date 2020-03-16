@@ -1,0 +1,25 @@
+<svg width="100%" height="100%" version="1.1" viewBox="0 0 217.22292 62.706249" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mini-plan">
+	<g transform="translate(-120.44 -220.29)">
+		<image x="120.44" y="220.29" width="217.22" height="62.706" preserveAspectRatio="none" xlink:href="./assets/images/floor/mini-plan.png"/>
+		<g>
+			<a xlink:href="/" class="choise-apartment__link js-link" data-type="№145" data-flats-hover="1" data-number="20" data-square="33.53" data-livsquare="18.07" data-flats="1">				
+				<path d="m157.11 221.2h35.908v60.665h-29.671v-27.781h-2.2679v-8.5045l-3.1866-0.85384z"/>
+			</a>
+			<a xlink:href="/" class="choise-apartment__link js-link" data-type="№146" data-flats-hover="1" data-number="20" data-square="33.53" data-livsquare="18.07" data-flats="1">
+				<path d="m193.01 221.2 36.286-0.56696v24.568l-4.7247 0.75595 0.18899 7.7485-1.7009 0.18899 0.56697 28.726-30.616-0.75595z"/>
+			</a>
+			<a xlink:href="/" class="choise-apartment__link js-link" data-type="№147" data-flats-hover="1" data-number="20" data-square="33.53" data-livsquare="18.07" data-flats="1">
+				<path  d="m229.3 220.63 36.664 0.18899 0.56697 61.232-30.427 0.18899-0.37797-28.537-2.6458-0.56696v-8.3155l-3.7798 0.37798z"/>
+			</a>
+			<a xlink:href="/" class="choise-apartment__link js-link" data-type="№148" data-flats-hover="1" data-number="20" data-square="33.53" data-livsquare="18.07" data-flats="1">
+				<path class="dark" d="m265.96 220.82 35.719 0.56696v23.624l-3.9688 0.18899 0.18899 8.1265-2.6458-0.56696 0.18898 30.238-28.915-0.94494z"/>
+			</a>
+			<a xlink:href="/" class="choise-apartment__link js-link" data-type="№149" data-flats-hover="1" data-number="20" data-square="33.53" data-livsquare="18.07" data-flats="1">
+				<path  d="m120.44 220.29h36.475v24.342h-4.3467v9.2604h-2.8348v28.915h-28.915z"/>
+			</a>
+			<a xlink:href="/" class="choise-apartment__link js-link" data-type="№150" data-flats-hover="1" data-number="20" data-square="33.53" data-livsquare="18.07" data-flats="1">
+				<path  d="m301.68 221.39h35.908v61.61h-27.97v-30.616l-3.5392 0.94833v-9.2638h-4.3983z"/>
+			</a>
+		</g>
+	</g>
+</svg>

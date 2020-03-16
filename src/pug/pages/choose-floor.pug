@@ -1,0 +1,67 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Обрати поверх';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/choose-floor.js')
+
+
+block content
+	.mini-title.mini-title_white.container
+		include ../includes/crumbs.pug
+		.heading
+			.heading__left
+				+svg('line-title')
+				h1.page-title Обрати поверх
+			.heading__right
+				a(href="./filter.html").heading__link
+					+svg('filter')
+					span Обрати за параметрами
+				.heading__img
+					img(src="./assets/images/compas.svg")
+
+	.container
+		.floor-choose
+			.floor-choose__info.info-floor
+				.info-floor__col.info-floor__col_mob
+					a(href="/").info-floor__link 1 кімната
+					a(href="/").info-floor__link 2 кімнати
+				.info-floor__col.info-floor__col_mob
+					a(href="/").info-floor__link 3 кімнати
+					a(href="/").info-floor__link 4 кімнати
+				.info-floor__col
+					a(href="#call-form-popup" data-effect="mfp-move-horizontal").read-more-block.js-call-form-popup
+						img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+						span.read-more-block__text.read-more-block__text_dark Дізнатись ціну
+			.floor-choose__img
+				include ../includes/house.svg
+			.floor-choose__info-block.info-block-floor-choose
+				p.info-block-choose__item
+					span.info-block-floor
+					| поверх
+				p.info-block-choose__item
+					span.info-block-appartments
+					| квартир у продажу
+			.floor-choose__icon
+				img(src="./assets/images/cloud.png")
+				.tooltip  Оберіть потрібний поверх
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

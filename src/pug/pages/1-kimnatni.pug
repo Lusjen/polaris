@@ -1,0 +1,327 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Обрати за параметрами';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/filter.js')
+block content
+	.filter-page
+		.mini-title.mini-title_white.container
+			include ../includes/crumbs-white.pug
+			.heading
+				.heading__left
+					+svg('line-title')
+					h1.page-title.page-link_wc Обрати за параметрами
+		.filter-main
+			ul.filter-parametrs.filter-parametres-js
+				li( class="filter-item")
+					h4(class="filter__title") Секція
+					div(class="js_checkboxes__build room-checkbox-block")
+						input( id="build1" class="checkbox__room filter__checkbox" type="checkbox" value="1")
+						label( for="build1" class="checkbox__text") 1
+						input( id="build2" class="checkbox__room filter__checkbox" type="checkbox" value="2")
+						label( for="build2" class="checkbox__text") 2
+						input( id="build3" class="checkbox__room filter__checkbox" type="checkbox" value="3")
+						label( for="build3" class="checkbox__text") 3
+				li( class="filter-item")
+					h4( class="filter__title") Поверх
+					div( class="range-item")
+						.range-item-wrapper
+							input(type="hidden" class="range-init irs-hidden-input" id="val_floor" value="1;25")
+							span.decor-corner.decor-corner--top-left.border-color--main
+							span.decor-corner.decor-corner--top-right.border-color--main
+							span.decor-corner.decor-corner--bottom-right.border-color--main
+							span.decor-corner.decor-corner--bottom-left.border-color--main
+						div( class="range-wrapper")
+							div(class="range-block")
+								span з
+								input(class="js_val_floor_min input-filter-js slider__currentMin" name="val_floor_min" type="number" min="1" value="1" max="25" id="val_floor_min")
+							div(class="range-block")
+								span по
+								input(class="js_val_floor_max input-filter-js slider__currentMax" name="val_floor_max" type="number" min="1" value="25" max="25" id="val_floor_max")
+				li( class="filter-item")
+					h4(class="filter__title") Кімнат
+					div(class="js_checkboxes__rooms room-checkbox-block")
+						input( id="checkbox__room1" class="checkbox__room filter__checkbox" checked type="checkbox" value="1")
+						label( for="checkbox__room1" class="checkbox__text") 1
+						input( id="checkbox__room2" class="checkbox__room filter__checkbox" type="checkbox" value="2")
+						label( for="checkbox__room2" class="checkbox__text") 2
+						input( id="checkbox__room3" class="checkbox__room filter__checkbox" type="checkbox" value="3")
+						label( for="checkbox__room3" class="checkbox__text") 3
+						input( id="checkbox__room4" class="checkbox__room filter__checkbox" type="checkbox" value="4")
+						label( for="checkbox__room4" class="checkbox__text") 4
+				li( class="filter-item")
+					h4( class="filter__title") Загальна площа м
+						sub 2
+					div( class="range-item")
+						.range-item-wrapper
+							input(type="hidden" class="range-init irs-hidden-input" id="val_square" value="15;40")
+							span.decor-corner.decor-corner--top-left.border-color--main
+							span.decor-corner.decor-corner--top-right.border-color--main
+							span.decor-corner.decor-corner--bottom-right.border-color--main
+							span.decor-corner.decor-corner--bottom-left.border-color--main
+						div( class="range-wrapper")
+							div(class="range-block")
+								span з
+								input(class="js_val_square_min input-filter-js slider__currentMin" name="val_square_min" type="number" min="15" value="15" max="40" id="val_square_min")
+							div(class="range-block")
+								span по
+								input(class="js_val_square_max input-filter-js slider__currentMax" name="val_square_max" type="number" min="15" value="40" max="40" id="val_square_max")
+				li( class="filter-item")
+					h4( class="filter__title") Житлова площа м
+						sub 2
+					div( class="range-item")
+						.range-item-wrapper
+							input(type="hidden" class="range-init irs-hidden-input" id="val_squareLiv" value="15;40")
+							span.decor-corner.decor-corner--top-left.border-color--main
+							span.decor-corner.decor-corner--top-right.border-color--main
+							span.decor-corner.decor-corner--bottom-right.border-color--main
+							span.decor-corner.decor-corner--bottom-left.border-color--main
+						div( class="range-wrapper")
+							div(class="range-block")
+								span з
+								input(class="js_val_squareLiv_min input-filter-js slider__currentMin" name="val_square_min" type="number" min="15" value="15" max="40" id="val_squareLiv_min")
+							div(class="range-block")
+								span по
+								input(class="js_val_squareLiv_max input-filter-js slider__currentMax" name="val_square_max" type="number" min="15" value="40" max="40" id="val_squareLiv_max")
+				.filter-search Підібрати
+				.filter-nav
+					button(type="button").js-reset_button.filter__reset-btn.underline-color--dark.hover-underline Очистити фільтри
+				p.filter-nav__res-note Знайдено: 
+					span.number_flats
+					|  квартир
+			.filter-box
+				.filter-results__head
+					.result-type-link.result-list(data-name="list") Список
+					.result-type-link.result-cards.color-link(data-name="cards") Плитка
+				.filter-box__inner
+					div( class="filter-results filter-pagination" data-pagination="1")
+						// START ITERATION
+						div( class="filter-results-item js-result__item " data-floor="3" data-rooms="3" data-area="39" data-larea="30" data-build="2")
+							a(href="./flat.html" class="filter-results-item__link")
+								div( class="filter-results-item__img")
+									+img("flat/plan.png")
+								div( class="filter-results-item__number") №145
+								table( class="filter-results-item__table")
+									tbody
+										tr
+											td( class="table-title") Поверх:
+											td( class="table-result") 3
+										tr
+											td( class="table-title") Кол-во комнат:
+											td( class="table-result") 3
+										tr
+											td( class="table-title") Общая площадь:
+											td( class="table-result") 39
+										tr
+											td( class="table-title") Жилая площадь:
+											td( class="table-result") 30
+								div( class="filter-results-item__links")
+									.read-more-block
+										img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+										span(class="read-more-block__text read-more-block__text_dark") Детальніше
+						// END ITERATION
+						// START ITERATION
+						div( class="filter-results-item js-result__item " data-floor="1" data-rooms="1" data-area="29.71" data-larea="20" data-build="2")
+							a(href="./flat.html" class="filter-results-item__link")
+								div( class="filter-results-item__img")
+									+img("flat/plan.png")
+								div( class="filter-results-item__number") №145
+								table( class="filter-results-item__table")
+									tbody
+										tr
+											td( class="table-title") Поверх:
+											td( class="table-result") 1
+										tr
+											td( class="table-title") Кол-во комнат:
+											td( class="table-result") 1
+										tr
+											td( class="table-title") Общая площадь:
+											td( class="table-result") 29.71
+										tr
+											td( class="table-title") Жилая площадь:
+											td( class="table-result") 20
+								div( class="filter-results-item__links")
+									.read-more-block
+										img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+										span(class="read-more-block__text read-more-block__text_dark") Детальніше
+						// END ITERATION
+						// START ITERATION
+						div( class="filter-results-item js-result__item " data-floor="3" data-rooms="3" data-area="39" data-larea="30" data-build="2")
+							a(href="./flat.html" class="filter-results-item__link")
+								div( class="filter-results-item__img")
+									+img("flat/plan.png")
+								div( class="filter-results-item__number") №145
+								table( class="filter-results-item__table")
+									tbody
+										tr
+											td( class="table-title") Поверх:
+											td( class="table-result") 3
+										tr
+											td( class="table-title") Кол-во комнат:
+											td( class="table-result") 3
+										tr
+											td( class="table-title") Общая площадь:
+											td( class="table-result") 39
+										tr
+											td( class="table-title") Жилая площадь:
+											td( class="table-result") 30
+								div( class="filter-results-item__links")
+									.read-more-block
+										img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+										span(class="read-more-block__text read-more-block__text_dark") Детальніше
+						// END ITERATION
+						// START ITERATION
+						div( class="filter-results-item js-result__item " data-floor="3" data-rooms="3" data-area="40" data-larea="30" data-build="2")
+							a(href="./flat.html" class="filter-results-item__link")
+								div( class="filter-results-item__img")
+									+img("flat/plan.png")
+								div( class="filter-results-item__number") №145
+								table( class="filter-results-item__table")
+									tbody
+										tr
+											td( class="table-title") Поверх:
+											td( class="table-result") 3
+										tr
+											td( class="table-title") Кол-во комнат:
+											td( class="table-result") 3
+										tr
+											td( class="table-title") Общая площадь:
+											td( class="table-result") 40
+										tr
+											td( class="table-title") Жилая площадь:
+											td( class="table-result") 30
+								div( class="filter-results-item__links")
+									.read-more-block
+										img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+										span(class="read-more-block__text read-more-block__text_dark") Детальніше
+						// END ITERATION
+						// START ITERATION
+						div( class="filter-results-item js-result__item pagination-filter" data-floor="3" data-rooms="3" data-area="40" data-larea="30" data-build="2")
+							a(href="./flat.html" class="filter-results-item__link")
+								div( class="filter-results-item__img")
+									+img("flat/plan.png")
+								div( class="filter-results-item__number") №145
+								table( class="filter-results-item__table")
+									tbody
+										tr
+											td( class="table-title") Поверх:
+											td( class="table-result") 3
+										tr
+											td( class="table-title") Кол-во комнат:
+											td( class="table-result") 3
+										tr
+											td( class="table-title") Общая площадь:
+											td( class="table-result") 40
+										tr
+											td( class="table-title") Жилая площадь:
+											td( class="table-result") 30
+								div( class="filter-results-item__links")
+									.read-more-block
+										img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+										span(class="read-more-block__text read-more-block__text_dark") Детальніше
+						// END ITERATION
+						// START ITERATION
+						div( class="filter-results-item js-result__item pagination-filter" data-floor="2" data-rooms="2" data-area="40" data-larea="30" data-build="2")
+							a(href="./flat.html" class="filter-results-item__link")
+								div( class="filter-results-item__img")
+									+img("flat/plan.png")
+								div( class="filter-results-item__number") №145
+								table( class="filter-results-item__table")
+									tbody
+										tr
+											td( class="table-title") Поверх:
+											td( class="table-result") 2
+										tr
+											td( class="table-title") Кол-во комнат:
+											td( class="table-result") 2
+										tr
+											td( class="table-title") Общая площадь:
+											td( class="table-result") 40
+										tr
+											td( class="table-title") Жилая площадь:
+											td( class="table-result") 30
+								div( class="filter-results-item__links")
+									.read-more-block
+										img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+										span(class="read-more-block__text read-more-block__text_dark") Детальніше
+						// END ITERATION
+					.filter-results-list
+						.filter-results-list__legend
+							.result-title Секція
+							.result-title Поверх
+							.result-title кімнат
+							.result-title Загальна площа м2
+							.result-title Житлова площа м2
+						.filter-results-list__flats
+							// START ITERATION
+							a(href="").filter-results-list__flat.js-result__item(data-floor="3" data-rooms="3" data-area="39" data-larea="30" data-build="2" data-image="./assets/images/flat/plan.png")
+								.build 2
+								.floorr 3
+								.rooms 3
+								.square 39
+								.square 30
+							// END ITERATION
+							// START ITERATION
+							a(href="").filter-results-list__flat.js-result__item(data-floor="1" data-rooms="1" data-area="29.71" data-larea="20" data-build="2" data-image="./assets/images/flat/plan.png") 
+								.build 2
+								.floorr 1
+								.rooms 1
+								.square 19.71
+								.square 20
+							// END ITERATION
+							// START ITERATION
+							a(href="").filter-results-list__flat.js-result__item(data-floor="3" data-rooms="3" data-area="39" data-larea="30" data-build="2" data-image="./assets/images/flat/plan.png")
+								.build 2
+								.floorr 3
+								.rooms 3
+								.square 39
+								.square 30
+							// END ITERATION
+							// START ITERATION
+							a(href="").filter-results-list__flat.js-result__item(data-floor="3" data-rooms="3" data-area="40" data-larea="30" data-build="2" data-image="./assets/images/flat/plan.png") 
+								.build 2
+								.floorr 3
+								.rooms 3
+								.square 40
+								.square 30
+							// END ITERATION
+							// START ITERATION
+							a(href="").filter-results-list__flat.js-result__item(data-floor="3" data-rooms="3" data-area="40" data-larea="30" data-build="2" data-image="./assets/images/flat/plan.png")
+								.build 2
+								.floorr 3
+								.rooms 3
+								.square 40
+								.square 30
+							// END ITERATION
+							// START ITERATION
+							a(href="").filter-results-list__flat.js-result__item(data-floor="2" data-rooms="2" data-area="40" data-larea="30" data-build="2" data-image="./assets/images/flat/plan.png") 
+								.build 2
+								.floorr 2
+								.rooms 2
+								.square 40
+								.square 30
+							// END ITERATION
+					.filter__more-items-block
+						button(type="button").js-button_more-items.button--primary.button.filter__more-items-btn.filter-see-more  Завантажити ще
+
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

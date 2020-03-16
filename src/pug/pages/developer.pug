@@ -1,0 +1,142 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Забудовник';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/developer.js')
+block content
+	.developer
+		.developer__bg1
+			.mini-title.mini-title_white.container
+				include ../includes/crumbs-white.pug
+				.heading
+					.heading__left
+						+svg('line-title')
+						h1.page-title.page-link_wc Забудовник
+			.developer__wrap
+				.developer__top
+					.developer__name
+						.developer__col
+							a(href="/").developer__logo
+								img(src="./assets/images/perfect-logo.svg")
+							.developer__text
+								p Perfect Group об'єднує найкращих професіоналів в галузях проектування, інженерії, архітектури та післяпродажного сервісу. 	
+						.developer__col
+							.developer__row
+								.developer__icon
+									+svg('star')
+								.developer__text.text.text_bold
+									p Окрема увага в компанії Perfect Group приділяється роботі з клієнтами. 
+							.developer__text.text
+								p Надійність кожного фахівця і точна взаємодія команди визначає беззмінно високу якість будівництва житлових і промислових об'єктів Perfect Group. Від моменту першого дзвінка до заселення, фахівці відділу продажу забезпечують індивідуальний підхід до кожного клієнта.
+					.developer__info.info-block
+						.info-block__item
+							.info-block__number 92
+							.info-block__description
+								.info-block__icon
+									+svg('object')
+								.info-block__text.text.text_wc
+									p об’єкти збудовано за період роботи
+						.info-block__item
+							.info-block__number 9
+							.info-block__description
+								.info-block__icon
+									+svg('complex')
+								.info-block__text.text.text_wc
+									p комплексів активно будуються зараз
+						.info-block__item
+							.info-block__number 28
+							.info-block__description
+								.info-block__icon
+									+svg('calendar')
+								.info-block__text.text.text_wc
+									p років будуємо для вас
+						.info-block__item
+							.info-block__number 30
+							.info-block__description
+								.info-block__icon
+									+svg('complex')
+								.info-block__text.text.text_wc
+									p компаній входять до скаду Perfect Group
+						.info-block__item.info-block__item_lg
+							.info-block__number 1 112 965
+							.info-block__description
+								.info-block__text.text.text_big м
+									sup 2
+								.info-block__text.text.text_wc
+									p загальна площа об’єктів
+		.developer__bg2
+			.developer__center.project
+				.project__info
+					.project__title Інші проекти компанії:
+					.project__text.text
+						p Надійність кожного фахівця і точна взаємодія команди визначає беззмінно високу якість будівництва житлових і промислових об'єктів Perfect Group.
+				.project__gallery
+					.project__counter 1
+						span
+						| 5
+					.gallery-project.js-gallery-project
+						a(href="/").gallery-project__item
+							img(src="./assets/images/developer/gallery/1.svg")
+						a(href="/").gallery-project__item
+							img(src="./assets/images/developer/gallery/2.svg")
+						a(href="/").gallery-project__item
+							img(src="./assets/images/developer/gallery/1.svg")
+						a(href="/").gallery-project__item
+							img(src="./assets/images/developer/gallery/2.svg")
+					.gallery-project__btns
+						.gallery-project__btn-prev
+							.btn-prev
+								+svg('arrow-slider')
+						.gallery-project__btn-next
+							.btn-next
+								+svg('arrow-slider')
+			.developer__bg1
+				.developer__wrap
+					.developer__top2
+						.developer__name
+							.developer__col
+								a(href="/").developer__logo.developer__logo_sm
+									img(src="./assets/images/citex-logo.svg")
+								.developer__text
+									p CITEX — створений вражати і хвилювати. Це є основою нашої компанії і стимулом її постійного розвитку, як потужного, складного, але водночас динамічного, емпатичного організму, чутливого до актуальних людських потреб. 	
+							.developer__col
+								.developer__row
+									.developer__icon
+										+svg('star')
+									.developer__text.text.text_bold
+										p Ми ті, хто наважилися створювати нерухомість формату city + excitement.
+								.developer__text.text
+									p City — жива структура, що постійно прогресує, змінюється, росте і вдосконалюється в поєднанні з захватом, екшеном і дивовижним почуттям, чим власне і є Excitement.
+						.developer__bottom.project
+							.project__col-sm
+								.project__title.project__title_wc Інші проекти компанії:
+							.project__col-lg
+								a(href="/").project__item.project__item1
+									img(src="./assets/images/developer/kandinsky_logo.svg")
+								a(href="/").project__item.project__item2
+									img(src="./assets/images/developer/rusaniv_logo.svg")
+								a(href="/").project__item.project__item3
+									img(src="./assets/images/developer/art-kvartal.svg")
+
+
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

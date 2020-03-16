@@ -1,0 +1,136 @@
+include ../includes/mixins.pug
+-
+	var pagesLink = [	
+		{
+			home: '/',
+			infrastructure: './infrastructure.html',
+			about: './about.html',
+			location: './location.html',
+			advantages: './advantages.html',
+			document: './document.html',
+			gallery: './gallery.html',
+			developer: './developer.html',
+			news: './news.html',
+			contact: './contact.html',
+			// obj: './obj.html',
+			commerce: './commerce.html',
+			filter: './filter.html',
+			chooseFloor: './choose-floor.html',
+			kimnatni1: './1-kimnatni.html',
+			kimnatni2: './2-kimnatni.html',
+			kimnatni3: './3-kimnatni.html',
+			kimnatni4: './4-kimnatni.html',
+			panorama: './panorama.html',
+		}
+	];
+	// var arrMenu = [	
+	// 	{link: '#', title: 'наши объекты', child: true, subItems: [
+	// 		{
+	// 			title: 'жилая ',
+	// 				title2: ' недвижимость',
+	// 				link: pagesLink[0].realtyLive,
+	// 				src: '/home/menu/5.jpg'
+	// 		},
+	// 		{
+	// 				title: 'Коммерческая ',
+	// 				title2: ' недвижимость',
+	// 				link: pagesLink[0].realtyComm,
+	// 				src: '/home/menu/6.jpg'
+	// 		},
+	// 		{
+	// 				title: 'Социальные ',
+	// 				title2: ' объекты',
+	// 				link: pagesLink[0].realtySocial,
+	// 				src: '/home/menu/7.jpg'
+	// 		}
+	// 	]},
+	// 	{link: pagesLink[0].about, title: 'о компании', child: false},
+	// 	{link: pagesLink[0].news, title: 'новости', child: false},
+	// 	{link: '#', title: 'услуги', child: true, subItems: [
+	// 		{
+	// 			 title: 'Услуги ',
+	// 			 title2: ' обслуживания',
+	// 			 link: pagesLink[0].services,
+	// 			 src: '/home/menu/1.jpg'
+	// 		},
+	// 		{
+	// 			 title: 'Наше ',
+	// 			 title2: ' Проектирование',
+	// 			 link: pagesLink[0].planning,
+	// 			 src: '/home/menu/2.jpg'
+	// 		},
+	// 		{
+	// 			 title: 'Аренда',
+	// 			 title2: ' спец-техники',
+	// 			 link: pagesLink[0].room,
+	// 			 src: '/home/menu/3.jpg'
+	// 		},
+	// 		{
+	// 			 title: 'Охранные ',
+	// 			 title2: ' услуги',
+	// 			 link: pagesLink[0].security,
+	// 			 src: '/home/menu/4.jpg'
+	// 		}
+	// 		]},
+	// 	{link: pagesLink[0].contact, title: 'контакты', child: false},
+	// 	{link: pagesLink[0].career, title: 'карьера', child: false},
+	// ];
+block variable
+doctype html
+html(lang="uk")
+	head
+		meta(charset='utf-8')
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+		//- Edge и ряд мобильных браузеров слишком умны. Отключим это.
+		meta(name='format-detection', content='telephone=no')
+		meta(name='format-detection', content='date=no')
+		meta(name='format-detection', content='address=no')
+		meta(name='format-detection', content='email=no')
+		meta(content='notranslate', name='google')
+		//- Фавиконки (https://realfavicongenerator.net)
+		//- link(rel='apple-touch-icon', sizes='180x180', href='/img/favicon/apple-touch-icon.png')
+		//- link(rel='icon', type='image/png', sizes='32x32', href='/img/favicon/favicon-32x32.png')
+		link(rel='icon', type='image/png', sizes='16x16', href='../static/favicon.ico')
+		//- link(rel='manifest', href='/img/favicon/site.webmanifest')
+		//- link(rel='mask-icon', href='/img/favicon/safari-pinned-tab.svg', color='#5bbad5')
+		//- meta(name='msapplication-TileColor', content='#5bbad5')
+		//- meta(name='theme-color', content='#000')
+		//- meta(name='msapplication-navbutton-color', content='#000')
+		//- meta(name='apple-mobile-web-app-status-bar-style', content='#000')
+		block meta
+		block head
+
+	body
+		// START SVG SPRITE
+		include ../../assets/svg-sprite/sprite/symbol_sprite.php
+		// END SVG SPRITE
+		// START LOADER
+		include ../includes/loader.html
+		// END LOADER
+		// START POPUP MODAL
+		include ../includes/popup.pug
+		// END POPUP MODAL
+		// START MENU
+		include ../includes/menu.pug
+		// END MENU
+		// START INTERACTIVE CURSOR
+		.cursor#cursor
+		.cursor2#cursor2
+		.cursor3#cursor3
+		// END INTERACTIVE CURSOR
+		// -------
+		// -------
+		// -------
+		// -------
+		// START HEADER
+		block header
+		// END HEADER
+		.page__inner
+			.page__content
+				block content
+
+			.page__footer-wrapper
+				// START FOOTER
+				block footer
+				// END FOOTER
+		block scripts

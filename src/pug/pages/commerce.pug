@@ -1,0 +1,101 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Комерційна нерухомість';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/tabs.js')
+block content
+	.mini-title.mini-title_white.container
+		include ../includes/crumbs.pug
+		.heading
+			.heading__left
+				+svg('line-title')
+				h1.page-title Комерційна нерухомість
+	.commerce.container
+		.investment
+			.investment__img
+				img(src="./assets/images/commerce/1.png")
+			.investment__info
+				.block-text
+					.block-text__title
+						span.yellow Вигідні інвестиції  
+						|  у нерухомість
+					.block-text__subtitle POLARIS Homa&Plaza — поліфункціональний квартал з великою кількістю комерційних приміщень.
+					.block-text__text
+						p Формуючи гармонійну екосистему POLARIS, ми ретельно продумуємо її складові, які покликані задовольняти потреби як мешканців кварталу, так і тих, хто буде його регулярно відвідувати – з діловою метою, заради відпочинку, розваг і покупок.
+					a(href="#call-form-popup" data-effect="mfp-move-horizontal").read-more-block.js-call-form-popup
+						img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+						span.read-more-block__text.read-more-block__text_dark Дізнатись більше
+		.non-residential
+			.non-residential__title.title-md Нежитлове приміщення в POLARIS:
+			.non-residential__list.list-commerce
+				.list-commerce__item.list-commerce__item1
+					.list-commerce__info
+						.list-commerce__title Торговельні приміщення
+						.list-commerce__text 
+							p Понад 20 концептуальних магазинів з окремими входами та великими оглядовими вітринами
+					.list-commerce__icon.list-commerce__icon1
+						img(src="./assets/images/commerce/list-commerce/1.svg")
+				.list-commerce__item.list-commerce__item2
+					.list-commerce__icon.list-commerce__icon2
+						img(src="./assets/images/commerce/list-commerce/2.svg")
+					.list-commerce__info
+						.list-commerce__title Офіси
+						.list-commerce__text 
+							p Для художніх студій, архітектурних майстерень, кабінетів нотаріусів, офісів юридичних компаній.
+				.list-commerce__item.list-commerce__item3
+					.list-commerce__info
+						.list-commerce__title Кафе, ресторани
+						.list-commerce__text 
+							p Адаптовані приміщення для розміщення вашого ресторану або кафе
+					.list-commerce__icon.list-commerce__icon3
+						img(src="./assets/images/commerce/list-commerce/3.svg")
+				.list-commerce__item.list-commerce__item4
+					.list-commerce__icon.list-commerce__icon4
+						img(src="./assets/images/commerce/list-commerce/4.svg")
+					.list-commerce__info
+						.list-commerce__title Центр дитячого розвитку
+						.list-commerce__text 
+							p Адаптовані приміщення для розміщення вашого центру дитячого розвитку.
+				.list-commerce__item.list-commerce__item5
+					.list-commerce__info
+						.list-commerce__title Фітнес-центр
+						.list-commerce__text 
+							p Завдяки варіативному плануванню комерційні приміщення враховують специфіку майбутнього закладу
+					.list-commerce__icon.list-commerce__icon5
+						img(src="./assets/images/commerce/list-commerce/5.svg")
+		.commerce-info
+			.commerce-info__logo
+				img(src="./assets/images/commerce/logo-dark.svg")
+			.commerce-info__tel
+				.commerce-info__title Менеджер комерційної нерухомості:
+				a(href="tel:(044) 555 45 45")
+					+svg('tel')
+					span (044) 555 45 45
+			a(href="mailto:hi@polaris@gmail.com").commerce-info__email.email
+				.email__icon
+					+svg('mail-contact')
+				.email__text.email__text_dark Написати нам
+
+
+			
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

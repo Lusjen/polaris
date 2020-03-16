@@ -1,0 +1,73 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Переваги';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+block content
+	section.advantages-layout#advantages
+		div(class="advantages container")
+			.mini-title
+				include ../includes/crumbs.pug
+				.heading
+					.heading__left
+						+svg('line-title')
+						h1.page-title Переваги
+			.advantages-wrapper1
+				.advantages__single-block 
+					.section-title Вперше на столичній Оболоні
+					.advantages__single-block__number
+						span.advantages__single-block__number_yellow 01
+						span.advantages__single-block__number_gray / 04
+					.advantages__single-block__title Новобудова, що дарує зоряне відчуття польоту над усією планетою!
+					.advantages__single-block__text 
+						ul.advantages__single-block__list
+							li 5 хв до метро
+							li Гарні панорами з вікон
+							li Багатофункціональна інфраструктура
+							li Дитячий садочок
+							li Спортивний клуб
+							li Двір без автомобілів
+							li Кращі умови для дозвілля
+				img(class="advantage-img" src="./assets/images/advantages/advan.png")
+			.advantages-wrapper2
+				.advantages__single-block 
+					.advantages__single-block__number
+						span.advantages__single-block__number_yellow 02
+						span.advantages__single-block__number_gray / 04
+					.advantages__single-block__title Двір без автомобілів
+					.advantages__single-block__text Закритий упорядкований периметр створить унікальні можливості для відпочинку мешканців всіх вікових категорій. Тут будуть не лише цікаві і безпечні дитячі та спортивні майданчики, але й багато зелені, зручні лавки, лаунж, місця для відпочинку. 
+				.advantages__single-block 
+					.advantages__single-block__number
+						span.advantages__single-block__number_yellow 03
+						span.advantages__single-block__number_gray / 04
+					.advantages__single-block__title Простір, де кожен стане щасливим
+					.advantages__single-block__text POLARIS sстворений з турботою про кожного. Нова команда проекту комплексно врахувала всі аспекті життя сучасного городянина, від самореалізації до безпеки й комфорту. 
+				.advantages__single-block 
+					.advantages__single-block__number
+						span.advantages__single-block__number_yellow 04
+						span.advantages__single-block__number_gray / 04
+					.advantages__single-block__title Модних шопінг у власному домі 
+					.advantages__single-block__text На перших поверхах житлового комплексу відкриється власний торговий центр. А також продуктовий супермаркет зі свіжими продуктами, що дозволить робити покупки, не виходячи за територію.
+		
+
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug
+

@@ -1,0 +1,198 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Інфраструктура';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+		var markList = [	
+					// {
+					// 	name: 'Отдел продаж №1 в г.Симферополе',
+					// 	svgLink: '#icon-logo',
+					// 	category: 'main'
+					// },
+					{
+						name: 'Магазины',
+						svgLink: '#icon-mark_shop',
+						category: 'shop',
+						delay: '1.1s',
+					},
+					{
+						name: 'Кафе та ресторани',
+						svgLink: '#icon-mark_cafe',
+						category: 'cafe',
+						delay: '1.2s',
+					},
+					{
+						name: 'Простір для офісів',
+						svgLink: '#icon-mark_office',
+						category: 'office',
+						delay: '1.2s',
+					},
+					{
+						name: 'Парк',
+						svgLink: '#icon-mark_park',
+						category: 'park',
+						delay: '1.3s',
+					},
+					{
+						name: 'Дитячий садок',
+						svgLink: '#icon-mark_bear',
+						category: 'child',
+						delay: '1.5s',
+					},
+					{
+						name: 'Дитячий майданчик',
+						svgLink: '#icon-mark_kinder',
+						category: 'kinder',
+						delay: '1.4s',
+					},
+					{
+						name: 'Спортивний зал',
+						svgLink: '#icon-mark_sport',
+						category: 'gym',
+						delay: '1.6s',
+					},
+				];
+	
+block meta
+	title= 'Інфраструктура'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	// script(src= 'https://maps.googleapis.com/maps/api/js?key=AIzaSyATtAtvM1V2tpg9HAcmQNKIrTV9hHwevOw')
+	script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC4EBsCfQfnwCFGD_o8iLWwH97tmNCU-6E&callback=initMap')
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/simpleParalax.js')
+	script(src='./assets/scripts/map.js')
+	script(src='./assets/scripts/infrastructure.js')
+
+block content
+	section(class="infrastructure")#infrastructure
+		.mini-title.container
+			include ../includes/crumbs.pug
+			.heading
+				.heading__left
+					+svg('line-title')
+					h1.page-title Інфраструктура
+		.infrastructure__info.container_pl
+			.block-text-top
+				.block-text__title
+					span Все необхідне поруч 
+				.block-text__wrap
+					.block-text__text
+						p Житловий комплекс знаходиться поруч з великою транспортною розв'язкою, зупинкою громадського транспорту та в 5 хвилинах на авто чи маршрутці до станцій метро Оболонь, Мінська, Героїв Сталінграда.
+					.block-text__text
+						p В кількох кварталах від будинку проходять різні маршрути громадського транспорту, що дозволяють без проблем дістатися будь-якої точки Києва. За додатковим розвагами і шопінгом звідси зручно під'їхати в ТРЦ Dream Town. 
+		//- BLOCK 1
+		div(class="infra-block infra-block__first") 
+			.block-img1
+				.block-title Children
+				img(class="thumbnail" src="./assets/images/infrastructure/kids1.png")
+				img(class="block-img-decor decor1 read-more-block__icon" src="./assets/images/common/yellow-star.svg" alt="read-more")
+				img(class="block-img-decor decor2 read-more-block__icon" src="./assets/images/common/yellow-star.svg" alt="read-more")
+				img(class="block-img-decor decor3 read-more-block__icon" src="./assets/images/common/yellow-star.svg" alt="read-more")
+			.block-text
+				.block-text__title Дитячий 
+					span.yellow садочок 
+					span на території				
+				.block-text__subtitle Маленькі зірочки – в центрі великої уваги. 
+				.block-text__text
+					p Мрії батьків збуваються у POLARIS. Прямо в житловому комплексі відкриється дитячий садок. Тут кожен мешканець зможе довірити свою дитину під нагляд турботливих вихователів.
+					p Мрії батьків збуваються у POLARIS. Прямо в житловому комплексі відкриється дитячий садок. Тут кожен мешканець зможе довірити свою дитину під нагляд турботливих вихователів.
+			img(class="block-img2" src="./assets/images/infrastructure/kids2.png")
+		//- BLOCK 2
+		div(class="infra-block infra-block__second")
+			.block-text__title_mobile.block-text__title 
+				span Лобі із власним  
+				span.yellow торговим центром	
+			.block-text
+				.block-text__title Лобі із власним 
+					span.yellow торговим центром			
+				.block-text__subtitle Щоб дістатися будь-якого з сервісів або магазинів, достатньо буде лише натиснути кнопку ліфту  
+				.block-text__text
+					p Оцініть новий рівень можливостей: запашну каву щоранку в кав'ярні на першому поверсі, зручний шопінг, регулярні заняття спортом, сучасний дитячий садочок, затишну зелену оазу парку у дворі – і все це за крок від дому. 
+					p Тут все буде вчасно. Вся необхідна інфраструктура розміститься на перших поверхах. Тож власники квартир не витрачатимуть дорогоцінний час на зайву дорогу або затори.
+				a(href='./choose-floor.html').read-more-block
+					img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+					span(class="read-more-block__text read-more-block__text_dark") ОБРАТИ КВАРТИРУ
+			.block-img1
+				.block-title shopping
+				img(class="thumbnail" src="./assets/images/infrastructure/shop1.png")
+		img(class="single-img" src="./assets/images/infrastructure/shop2.png")
+		//- BLOCK 3
+		div(class="infra-block infra-block__third")
+			.block-text
+				.block-text__title
+					span.yellow Вхідна група 	
+					span рівня п’ятизіркового готелю
+				.block-text__subtitle Щодня  мешканців зустрічатиме та надихатиме особлива атмосфера, яку забезпечить досконалий дизайн, світло і кращі матеріали.  
+				.block-text__text
+					p Ставлення до місць загального користування - це показник рівня будинку. Позиціонування комплексу обумовило високі вимоги до внутрішнього простору і дизайну – бути максимально зручними, комфортними, приємними і стильними водночас. Тож творці комплексу небанально підійшли до рішення в холі. 
+					p Вхідна група ЖК POLARIS починається з чудово продуманого і обладнаного лобі. Мешканці будинку матимуть краще місце для зустрічі та для робочого конференц-колла. Просторі холи відрізнятимуться оригінальним оформленням і включатимуть в себе ресепшен, зону для очікувань, зручні красиві ліфти. 
+
+			.block-img1
+				.block-title entry
+				img(class="thumbnail" src="./assets/images/infrastructure/entrance.png")
+				img(class="mini-img " src="./assets/images/infrastructure/photo1.png")
+		//- BLOCK 4
+		div(class="infra-block infra-block__fourth")
+			.block-img1
+				.block-title sports
+				img(class="thumbnail"  data-tilt src="./assets/images/infrastructure/sport.png")
+				img(class="block-img-decor decor1 read-more-block__icon" src="./assets/images/common/yellow-star.svg" alt="read-more")
+				img(class="block-img-decor decor2 read-more-block__icon" src="./assets/images/common/yellow-star.svg" alt="read-more")
+				img(class="block-img-decor decor3 read-more-block__icon" src="./assets/images/common/yellow-star.svg" alt="read-more")
+			.block-text
+				.block-text__title Свій
+					span.yellow  спортклуб 
+					span у будинку
+				.block-text__subtitle Спорт для всіх бажаючих - у крокової доступності.  
+				.block-text__text
+					p На перших поверхах житлового комплексу POLARIS відкриється власний спортклуб. Власники квартир зможуть нарешті знайти у щільному графіку вікно для регулярних занять спортом,  отримувати задоволення від тренувань без зайвого клопоту, обрати для цього зручний час, приходити в зал за будь-якої погоди і ніколи не запізнюватися.
+		//- BLOCK 5
+		div(class="infra-block infra-block__fifth")
+			.block-text
+				.block-text__title
+					span.yellow Парк і лаунж 
+					span у закритому дворі
+				.block-text__subtitle Власний парк POLARIS — це неймовірно затишна зелена приватна територія тільки для жителів комплексу.  
+				.block-text__text
+					p Тут все підкорено комфорту: зручні місця для спокійного дозвілля, ігрові майданчики для дітей, спортивні майданчики з вуличними тренажерами, open-air зони для роботи з ноутбуком, медитації, відпочинку.
+					p Це те місце, де діти обовязково знайдуть альтернативу гаджетам і зможуть відпочити від цифрового та віртуального світу. Дійсно цікаві інноваційні локації обовязково сподобаються маленьким мешканцям. Особливу увагу буде приділено безпеці на території.
+				a(href="#call-form-popup" data-effect="mfp-move-horizontal").read-more-block.js-call-form-popup
+					img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+					span.read-more-block__text.read-more-block__text_dark ЗАМОВИТИ ДЗВІНОК
+			.block-img1
+				.block-title lounge
+				img(class="thumbnail" src="./assets/images/infrastructure/park1.png")
+				img(class="mini-img" src="./assets/images/infrastructure/park2.png")
+	.infrastructure__map.drop
+		.map#map
+		.infrastructure__sidebar.js-drop(data-drop-height='64')
+			.drop__inner
+				.info-title.js-drop-back Об’єкти інфраструктури
+				.info-close
+					img(src="./assets/images/close.svg")
+				.mark-list
+					.mark-list__in
+						each val in markList
+							.mark-list__item.js-mark-item(data-category= val.category).wow.fadeInUp(data-wow-duration="1s" data-wow-delay= val.delay)
+								svg(class="svg-icon")
+									use(xlink:href=val.svgLink)
+								span.mark-text= val.name
+								svg(class="svg-eye")
+									use(xlink:href='#icon-eye')
+
+
+block footer
+	footer.footer
+		include ../includes/footer.pug
+block header
+	header.header
+		include ../includes/header.pug
+

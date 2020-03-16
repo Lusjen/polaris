@@ -1,0 +1,118 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'квартира 2а';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			},
+			{
+				title: 'Обрати поверх'
+			},
+			{
+				title: 'план поверху'
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/tabs.js')
+	script(src='./assets/scripts/floor.js')
+
+
+block content
+	.flat-page
+		.mini-title.mini-title_white.container
+			include ../includes/crumbs.pug
+			.heading
+				.heading__left
+					+svg('line-title')
+					h1.page-title Квартира 2А
+				.heading__right
+					a(href="./filter.html").heading__link
+						+svg('filter')
+						span Обрати за параметрами
+					.heading__img
+						img(src="./assets/images/compas.svg")
+
+		.container
+			.flat
+				.flat__left
+					.info-flat
+						.info-flat__item
+							.info-flat__number 3
+							.info-flat__name секція
+						.info-flat__item
+							.info-flat__number 10
+							.info-flat__name поверх
+						.info-flat__item
+							.info-flat__number 145
+							.info-flat__name № квартири
+						.info-flat__img
+							img(src="./assets/images/compas.svg")
+					.flat-parametrs
+						.flat-parametrs__top
+							.flat-parametrs__left
+								.total-square Загальна: 
+									span 115.78 м 
+										sup 2
+								.living-square Житлова: 
+									span 49.23 м 
+										sup 2
+							.flat-parametrs__right
+								+svg('pdf')
+						.flat-parametrs__center.flat-parametrs-box
+							.flat-parametrs-box__item
+								span Передпокій:
+								span.bold 4.77 м
+									sup 2
+							.flat-parametrs-box__item
+								span Кухня-їдальня:
+								span.bold 40.4 м
+									sup 2
+							.flat-parametrs-box__item
+								span Спальня 1:
+								span.bold 16.8 м
+									sup 2
+							.flat-parametrs-box__item
+								span Спальня 2:
+								span.bold 12.84 м
+									sup 2
+							.flat-parametrs-box__item
+								span Спальня 3:
+								span.bold 19.59 м
+									sup 2
+							.flat-parametrs-box__item
+								span Ванна:
+								span.bold 20.4 м
+									sup 2
+							.flat-parametrs-box__item
+								span Туалет:
+								span.bold 5.8 м
+									sup 2
+					.flat__link
+						a(href="#call-form-popup" data-effect="mfp-move-horizontal").read-more-block.js-call-form-popup
+							img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+							span.read-more-block__text.read-more-block__text_dark ДІЗНАТИСЬ ЦІНУ
+					.flat__mini-genplan.mini-genplan
+						.mini-genplan__title План поверху
+						.mini-genplan__img
+							include ../includes/mini-plan.svg
+						.mini-genplan__link
+							a(href="./floor.html") Назад на план поверху
+				.flat__right
+					img(src='./assets/images/flat/plan.png')
+			
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

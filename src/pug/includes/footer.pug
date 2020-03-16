@@ -1,0 +1,119 @@
+-
+	var arrMenu = [	
+		{ title: 'Головна',
+			submenu: [
+				{
+					title: "Про комплекс",
+					link: pagesLink[0].about
+				},
+				{
+					title: "Місцерозташування",
+					link: pagesLink[0].location
+				},
+				{
+					title: "Переваги",
+					link: pagesLink[0].advantages
+				}
+			]
+		},
+		{ title: 'Про комплекс',
+			submenu: [
+				{
+					title: "Інфраструктура",
+					link: pagesLink[0].infrastructure
+				},
+				{
+					title: "Документи",
+					link: pagesLink[0].document
+				},
+				{
+					title: "Галерея",
+					link: pagesLink[0].media
+				},
+				{
+					title: "Панорама",
+					link: pagesLink[0].panorama
+				},
+				{
+					title: "Забудовник",
+					link: pagesLink[0].developer
+				},
+				{
+					title: "Новости",
+					link: pagesLink[0].news
+				}
+			]
+		},
+		{ title: 'Обрати квартиру',
+			submenu: [
+				{
+					title: "За поверхом",
+					link: pagesLink[0].house
+				},
+				{
+					title: "За параметрами",
+					link: pagesLink[0].filter
+				},
+				{
+					title: "1-кімнатні",
+					link: pagesLink[0].genplanSingle2
+				},
+				{
+					title: "2-кімнатні",
+					link: pagesLink[0].genplanSingle
+				},
+				{
+					title: "3-кімнатні",
+					link: pagesLink[0].storerooms
+				},
+				{
+					title: "4-кімнатні",
+					link: pagesLink[0].decoration
+				},
+				{
+					title: "Комерційна нерухомість",
+					link: pagesLink[0].decoration
+				}
+			]
+		},
+	];
+.footer__top
+	.footer__top-in
+		.footer__logo
+			a(href="/" class="logo")
+					img(src="./assets/images/logo-footer.svg" data-footer-tablet="./assets/images/logo-footer-tablet.svg" data-footer-mob="./assets/images/logo-footer-mob.svg" id="logo-footer" alt="" title="")
+		.footer__menu.visible-hidden
+			ul.menu-list
+				each val in arrMenu
+					li.menu-list__item.menu-list__item_sm
+						span.menu-list__title_sm.menu-list__title= val.title
+						ul.submenu-list
+							each subitem in val.submenu
+								li
+									a(href= subitem.link class="submenu-list__item submenu-list__item_sm")= subitem.title
+				li.menu-list__item.menu-list__item_sm
+					span.menu-list__title.menu-list__title_sm Хід проекту
+						ul.submenu-list
+							li
+								a(href="" class="submenu-list__item submenu-list__item_sm is-active") Веб-камера
+							li
+								a(href="" class="submenu-list__item submenu-list__item_sm") Хід будівництва
+					span.menu-list__title.menu-list__title_sm Контакти
+						ul.submenu-list
+							li
+								a(href="" class="submenu-list__item submenu-list__item_sm") Розташування
+							li
+								a(href="" class="submenu-list__item submenu-list__item_sm") Зв'язок
+					.menu-list__icon
+							a(href="/")
+								+svg('viber')
+							a(href="/")
+								+svg('telegram')
+
+.footer__bottom
+	.footer__bottom-in
+		.footer__copy 
+			p © 2008-2019 Polaris. Home&Plaza. Всі права захищені. 
+		a(href='https://smarto.agency/' rel="nofollow" target="_blank").footer__link
+			span Разработка сайта
+			+img('smarto.svg')

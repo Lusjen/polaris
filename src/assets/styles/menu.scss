@@ -1,0 +1,108 @@
+// .menu {
+// 	position: fixed;
+// 	top: 0px;
+// 	left: 0px;
+// 	z-index: 99999;
+// 	visibility: visible;
+// 	display: flex;
+// 	width: 100vw;
+// 	height: 100vh;
+// 	background: #fff url('../images/bg-menu.png') no-repeat;
+// 	overflow-y: scroll;
+// 	background-size: cover;
+// 	transition: all 0.4s;
+
+// 	@include to(768px){
+// 		padding: 8% 11%;
+// 		justify-content: flex-start;
+// 		align-items: flex-start;
+		
+// 	}
+// 	@include to(520px){
+// 		flex-direction: column;
+// 	}
+// 	.cross-sircle {
+// 		padding: 0;
+// 		z-index: 51;
+// 		position: absolute;
+// 		top: 20px;
+// 		right: 25px;
+// 		width: 30px;
+// 		height: 30px;
+// 		border: none;
+// 		background-color: transparent;
+
+// 		svg {
+// 			width: 30px;
+// 			height: 30px;
+// 			fill: $mc--w;
+// 			stroke: $text;
+
+// 		}
+// 	}
+// }
+
+// .mob-menu-list__title{
+// 	margin-bottom: 20px;
+// 	display: flex;
+// 	font-weight: 600;
+// 	font-size: 18px;
+// 	letter-spacing: 0.2em;
+// 	text-decoration: none;
+// }
+
+// .mob-menu-list{
+// 	max-width: 450px;
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	justify-content: space-between;
+// 	a{
+// 		margin-bottom: 20px;
+// 		display: flex;
+// 		text-decoration: none;
+// 		color: $mc--b;
+// 		letter-spacing: 0.2em;
+// 		text-transform: uppercase;
+// 	}
+// }
+// .mob-menu-list__item{
+// 	width: 190px;
+// 	margin: 0 5px 30px;
+// 	display: flex;
+// 	flex-direction: column;
+// }
+// .mob-menu-list__item:nth-child(1){order: 1;}
+// .mob-menu-list__item:nth-child(2){order: 3;}
+// .mob-menu-list__item:nth-child(3){order: 4;}
+// .mob-menu-list__item:nth-child(4){order: 2;}
+// .mob-menu-list__item:nth-child(5){order: 5;}
+// .mob-menu-list__item:nth-child(6){order: 6;}
+// .logo-menu{
+// 	position: absolute;
+// 	left: 11%;
+// 	bottom: 7%;
+// 	width: 250px;
+// 	height: 250px;
+// 	animation-duration: 1.9s;
+// 	@include to(520px){
+// 		position: static;
+// 		align-self: center;
+// 	}
+// }
+
+// @keyframes menu-bg-anim {
+// 	from {
+// 		background-position-y: 800px;
+// 	}
+	
+// 	to {
+// 		background-position-y: 0;
+// 	}
+// }
+
+// .menu-bg-anim:not(#some) {
+// 	animation-name: menu-bg-anim;
+// 	animation-fill-mode: forwards;
+// 	backface-visibility: visible;
+// 	animation-duration: 2s;
+// }

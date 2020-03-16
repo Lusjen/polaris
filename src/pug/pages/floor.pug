@@ -1,0 +1,232 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'План поверху';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			},
+			{
+				title: 'Обрати поверх',
+				link: pagesLink[0].chooseFloor
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/tabs.js')
+	script(src='./assets/scripts/floor.js')
+
+
+block content
+	.mini-title.mini-title_white.container
+		include ../includes/crumbs.pug
+		.heading
+			.heading__left
+				+svg('line-title')
+				h1.page-title План поверху
+			.heading__right
+				a(href="./filter.html").heading__link
+					+svg('filter')
+					span Обрати за параметрами
+				.heading__img
+					img(src="./assets/images/compas.svg")
+
+	.container
+		.floor
+			.floor__tabs.tabs-floor
+				.tabs-floor__header
+					//begin date__item
+					.tabs-floor__item.is-active.js-btn(data-year="0")
+						.tabs-floor__name Секція 1
+					//end tabs-floor__item
+					//begin tabs-floor__item
+					.tabs-floor__item.js-btn(data-year="1")
+						.tabs-floor__name Секція 2
+					//end tabs-floor__item
+					//begin tabs-floor__item
+					.tabs-floor__item.js-btn(data-year="2")
+						.tabs-floor__name Секція 3
+					//end tabs-floor__item
+				.tabs-floor__content
+					.tabs-floor__content-in.is-active.js-list
+						//begin tabs-floor-item
+						.floor__wrap
+							.floor__left
+								.floor__row
+									+svg('star').rooms1
+									span 1 кімнатні
+								.floor__row
+									+svg('star').rooms2
+									span 2 кімнатні
+								.floor__row
+									+svg('star').rooms3
+									span 3 кімнатні
+								.floor__row
+									+svg('star').rooms4
+									span 4 кімнатні
+							.floor__right
+								.floor__img.js-choise-apartment-img
+									include ../includes/floor.svg
+									.choise-apartment__block.info-box.js-choise-img
+										.info-box__title.js-type 0
+										p.info-box__item Кількість кімнат: 
+											span.choise-apartment__rooms 0
+										p.info-box__item Загальна площа:
+											span.choise-apartment__square 0
+										p.info-box__item Житлова площа:
+											span.choise-apartment__livsquare 0
+										p.info-box__item Поверх:
+											span.choise-apartment__floor 0
+						.floor__wrap
+							.floor__right
+								.floor-navigation
+									a(href="/").floor-navigation__arrow.floor-navigation__arrow-prev
+										+svg('arrow-slider')
+									.floor-navigation__info 
+										span.floor-navigation__value 10 
+										span.floor-navigation__text  поверх
+									a(href="/").floor-navigation__arrow.floor-navigation__arrow-next
+										+svg('arrow-slider')
+								.floor-navigation-line
+									.floor-navigation-line__img
+									.floor-navigation-line__value-box
+										span.floor-navigation-line__value 1
+										span.floor-navigation-line__value 2
+										span.floor-navigation-line__value 3
+										span.floor-navigation-line__value 4
+										span.floor-navigation-line__value 5
+										span.floor-navigation-line__value 6
+										span.floor-navigation-line__value 7
+										span.floor-navigation-line__value 8
+										span.floor-navigation-line__value 9
+										span.floor-navigation-line__value.is-active 10
+										span.floor-navigation-line__value 11
+										span.floor-navigation-line__value 12
+							//end tabs-floor-item
+					.tabs-floor__content-in.js-list
+						//begin tabs-floor-item
+						//begin tabs-floor-item
+						.floor__wrap
+							.floor__left
+								.floor__row
+									+svg('star').rooms1
+									span 1 кімнатні
+								.floor__row
+									+svg('star').rooms2
+									span 2 кімнатні
+								.floor__row
+									+svg('star').rooms3
+									span 3 кімнатні
+								.floor__row
+									+svg('star').rooms4
+									span 4 кімнатні
+							.floor__right
+								.floor__img.js-choise-apartment-img
+									include ../includes/floor.svg
+									.choise-apartment__block.info-box.js-choise-img
+										.info-box__title.js-type 0
+										p.info-box__item Кількість кімнат: 
+											span.choise-apartment__rooms 0
+										p.info-box__item Загальна площа:
+											span.choise-apartment__square 0
+										p.info-box__item Житлова площа:
+											span.choise-apartment__livsquare 0
+										p.info-box__item Поверх:
+											span.choise-apartment__floor 0
+						.floor__wrap
+							.floor__right
+								.floor-navigation
+									a(href="/").floor-navigation__arrow.floor-navigation__arrow-prev
+										+svg('arrow-slider')
+									.floor-navigation__info 
+										span.floor-navigation__value 10 
+										span.floor-navigation__text  поверх
+									a(href="/").floor-navigation__arrow.floor-navigation__arrow-next
+										+svg('arrow-slider')
+								.floor-navigation-line
+									.floor-navigation-line__img
+									.floor-navigation-line__value-box
+										span.floor-navigation-line__value 1
+										span.floor-navigation-line__value 2
+										span.floor-navigation-line__value 3
+										span.floor-navigation-line__value 4
+										span.floor-navigation-line__value 5
+										span.floor-navigation-line__value 6
+										span.floor-navigation-line__value 7
+										span.floor-navigation-line__value 8
+										span.floor-navigation-line__value 9
+										span.floor-navigation-line__value.is-active 10
+										span.floor-navigation-line__value 11
+										span.floor-navigation-line__value 12		
+						//end tabs-floor-item
+					.tabs-floor__content-in.js-list
+						//begin tabs-floor-item
+						.floor__wrap
+							.floor__left
+								.floor__row
+									+svg('star').rooms1
+									span 1 кімнатні
+								.floor__row
+									+svg('star').rooms2
+									span 2 кімнатні
+								.floor__row
+									+svg('star').rooms3
+									span 3 кімнатні
+								.floor__row
+									+svg('star').rooms4
+									span 4 кімнатні
+							.floor__right
+								.floor__img.js-choise-apartment-img
+									include ../includes/floor.svg
+									.choise-apartment__block.info-box.js-choise-img
+										.info-box__title.js-type 0
+										p.info-box__item Кількість кімнат: 
+											span.choise-apartment__rooms 0
+										p.info-box__item Загальна площа:
+											span.choise-apartment__square 0
+										p.info-box__item Житлова площа:
+											span.choise-apartment__livsquare 0
+										p.info-box__item Поверх:
+											span.choise-apartment__floor 0
+						.floor__wrap
+							.floor__right
+								.floor-navigation
+									a(href="/").floor-navigation__arrow.floor-navigation__arrow-prev
+										+svg('arrow-slider')
+									.floor-navigation__info 
+										span.floor-navigation__value 10 
+										span.floor-navigation__text  поверх
+									a(href="/").floor-navigation__arrow.floor-navigation__arrow-next
+										+svg('arrow-slider')
+								.floor-navigation-line
+									.floor-navigation-line__img
+									.floor-navigation-line__value-box
+										span.floor-navigation-line__value 1
+										span.floor-navigation-line__value 2
+										span.floor-navigation-line__value 3
+										span.floor-navigation-line__value 4
+										span.floor-navigation-line__value 5
+										span.floor-navigation-line__value 6
+										span.floor-navigation-line__value 7
+										span.floor-navigation-line__value 8
+										span.floor-navigation-line__value 9
+										span.floor-navigation-line__value.is-active 10
+										span.floor-navigation-line__value 11
+										span.floor-navigation-line__value 12		
+				//end tabs-floor-item
+					
+			
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

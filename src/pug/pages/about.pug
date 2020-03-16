@@ -1,0 +1,64 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Про комплекс';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	// script(src='./assets/scripts/home.js')
+	// script(src='./assets/scripts/main.js') 
+	script(src='./assets/scripts/slider.js') 
+block content
+	.mini-title.mini-title_abs.container
+		include ../includes/crumbs.pug
+		.title-wrap
+			+svg('line-title')
+			h1.page-title Про комплекс
+	section(class="about-project-container container" id="about")
+		.about-project__counter 
+			span.current 01
+			span.max 05
+		.about-project-text
+			.about-project-text__title  Зіркове життя майбутнього
+			.about-project-text__text 	POLARIS стане яскравою зіркою та практичним житловим рішенням у затишній частині столичної Оболоні. Комплекс відкриє власникам квартир новий рівень сучасних можливостей за принципом – «живи-працюй-релаксуй».
+		.navigation-box 
+			div(class="navigation-box__item  next")
+				img(src="./assets/images/common/birdy-black.svg")
+			div(class="navigation-box__item previous") 
+				img(src="./assets/images/common/birdy-black.svg")
+		.about-project-image
+			img(src="./assets/images/about/image1.png")
+		.about-project-more
+			span.about-project-more__question Хочете дізнатись більше?
+			span(onclick="dataLayer.push({'event': 'clc_about'})").about-project-more__subtext.form-js замовити дзвінок
+		.about-project-second-text 
+			.about-project-second-text__title Дружня та відкрита філософія POLARIS – 
+			.about-project-second-text__text  це новий клас житла, що підходить для усіх сучасних людей та здатен задовольнити максимум інтересів. 
+		.about-project-slides
+			div(class="slide" data-img="about1.jpg" data-title="Зіркове життя майбутнього" data-text="POLARIS Home&Plaza стане яскравою зіркою та практичним житловим рішенням у затишній частині столичної Оболоні. Комплекс відкриє власникам квартир новий рівень сучасних можливостей за принципом – «живи-працюй-релаксуй»." data-secondTitle="Дружня та відкрита філософія POLARIS Home&Plaza – " data-secondText="це новий клас житла, що підходить для усіх сучасних людей та здатен задовольнити максимум інтересів. ")
+			div(class="slide" data-img="about2.jpg" data-title="Багатофункціональний та зірковий" data-text="Завдяки POLARIS Home&Plaza в цьому мікрорайоні вперше буде доступна мультифункціональність, що набирає все більшої популярності у європейських житлово-комерційних рішеннях." data-secondTitle="Орієнтуємось на потреби прогресивних киян" data-secondText="POLARIS Home&Plaza робить доступними якісні європейські рішення, що сподобаються і молодій парі, яка планує свою першу дитину, і великій родині з дітьми і тим, хто проживає сам. ")
+			div(class="slide" data-img="about3.jpg" data-title="Щаслива зірка для кожного" data-text="Саме тому нова концепція цього житлового комплексу представляє мультифункціональну будівлю у класі «комфорт +»." data-secondTitle="Власний ТЦ та садочок" data-secondText="Окрім квартир за доступною ціною м2 повноцінними складовими стане власний ТРЦ, дитячий садочок, спортивний клуб на перших поверхах.")
+			div(class="slide" data-img="about4.jpg" data-title="Трендовий підхід до житлового та публічного простору" data-text="Фрілансерам та спеціалістам, що не їздять в офіс щодня цей формат надасть можливість зручно працювати прямо з дому. Оптимальний перелік сервісів для дітей та дорослих дозволить всім членам сім'ї витрачати дорогоцінний час на дійсно важливі та цікаві речі." data-secondTitle="Комфортно буде кожному!" data-secondText="POLARIS Home&Plaza - новий рівень зручностей розроблений для того, щоб мешканці могли відчути максимальну свободу та отримати можливості для особистої реалізації.")
+			div(class="slide" data-img="about5.jpg" data-title="Зірка POLARIS Home&Plaza – Ваш надійний орієнтир в житловому питанні" data-text="Це житловий комплекс нового покоління, він відкритий для широкої аудиторії, бо тут справді легко поєднувати різні стилі і способи життя." data-secondTitle="Квартира саме для Вас" data-secondText="Просто зверніться до відділу продажів і дізнайтеся, які квартири формату POLARIS Home&Plaza підходять саме вам.")
+		.about-mobile-text
+
+
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug
+

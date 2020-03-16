@@ -1,0 +1,89 @@
+<svg width="320" height="820" version="1.1" viewBox="0 0 84.667 216.96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g transform="translate(0 -80.042)">
+
+    <!-- stars -->
+  <!-- <ellipse cx="20.446" cy="95.612" rx="6.6229" ry="6.0884" fill="#3c3698" stroke="#426478" stroke-width=".062079" style="paint-order:markers fill stroke"/> -->
+<image class="shine" x="20.446" y="95.612" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star1.svg"/>
+
+  <!-- <ellipse cx="55.859" cy="121.14" rx="6.6229" ry="6.0884" fill="#3c3698" stroke="#426478" stroke-width=".062079" style="paint-order:markers fill stroke"/> -->
+<image class="shine" x="55.859" y="121.14" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star1.svg"/>
+
+  <!-- <ellipse cx="14.7" cy="141.18" rx="6.6229" ry="6.0884" fill="#3c3698" stroke="#426478" stroke-width=".062079" style="paint-order:markers fill stroke"/> -->
+<image class="shine" x="14.7" y="141.18" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star1.svg"/>
+
+
+  <!-- <ellipse cx="38.22" cy="172.19" rx="6.6229" ry="6.0884" fill="#3c3698" stroke="#426478" stroke-width=".062079" style="paint-order:markers fill stroke"/> -->
+<image class="shine" x="38.22" y="172.19" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star1.svg"/>
+
+  <!-- <ellipse cx="13.096" cy="202.65" rx="6.6229" ry="6.0884" fill="#3c3698" stroke="#426478" stroke-width=".062079" style="paint-order:markers fill stroke"/> -->
+<image class="shine" x="13.096" y="202.65" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star1.svg"/>
+
+  <!-- <ellipse cx="47.307" cy="225.37" rx="6.6229" ry="6.0884" fill="#3c3698" stroke="#426478" stroke-width=".062079" style="paint-order:markers fill stroke"/> -->
+<image class="shine" x="47.307" y="225.37" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star1.svg"/>
+
+  <!-- <ellipse cx="17.64" cy="256.64" rx="6.6229" ry="6.0884" fill="#3c3698" stroke="#426478" stroke-width=".062079" style="paint-order:markers fill stroke"/> -->
+<image class="shine" x="17.64" y="256.64" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star1.svg"/>
+
+
+<!-- numbers -->
+<!-- <ellipse cx="28.598" cy="101.09" rx="6.4338" ry="6.701" fill="#f43698" stroke="#426478" stroke-width=".70763" style="paint-order:markers fill stroke"/> -->
+<text class="number"  x="28.598" y="101.09" >10</text>
+<!-- <rect x="38.487" y="98.151" width="25.391" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".21167" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="38.487" y="98.151" >хвилин на авто</text>
+    <!-- <rect x="38.487" y="102.96" width="25.391" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".21167" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="38.487" y="102.96" >до пущі водиці</text>
+
+
+<!-- <ellipse cx="59.868" cy="126.75" rx="6.4338" ry="6.701" fill="#f43698" stroke="#426478" stroke-width=".70763" style="paint-order:markers fill stroke"/> -->
+<text class="number"  x="59.868" y="126.75" >5</text>
+<!-- <rect x="66.658" y="122.18" width="14.218" height="4.8633" fill="#f43616" stroke="#426478" stroke-width=".15925" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="66.658" y="122.18" >Хвилин</text>
+    <!-- <rect x="66.658" y="127.04" width="14.218" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".15839" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="66.658" y="127.04" >до метро</text>
+
+
+<!-- <ellipse cx="18.442" cy="147.33" rx="6.4338" ry="6.701" fill="#f43698" stroke="#426478" stroke-width=".70763" style="paint-order:markers fill stroke"/> -->
+<text class="number"  x="18.442" y="147.33" >3</text>
+ <!-- <rect x="25.013" y="142.27" width="37.907" height="4.7651" fill="#f43616" stroke="#426478" stroke-width=".25739" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="25.013" y="142.27" >хвилин до трц "караван",</text>
+    <!-- <rect x="25.013" y="147.04" width="37.907" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".25863" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="25.013" y="147.04" >гіпермаркету "ашан"</text>
+
+
+<!-- <ellipse cx="44.901" cy="178.07" rx="6.4338" ry="6.701" fill="#f43698" stroke="#426478" stroke-width=".70763" style="paint-order:markers fill stroke"/> -->
+<text class="number"  x="44.901" y="178.07" >12</text>
+<!-- <rect x="54.924" y="173.79" width="25.391" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".21167" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="54.924" y="173.79" >хвилин до</text>
+    <!-- <rect x="54.924" y="178.6" width="25.391" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".21167" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="54.924" y="178.6" >вишгородської</text>
+    <!-- <rect x="54.924" y="183.41" width="25.391" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".21167" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="54.924" y="183.41" >набережної</text>
+
+
+<!-- <ellipse cx="17.105" cy="208.27" rx="6.4338" ry="6.701" fill="#f43698" stroke="#426478" stroke-width=".70763" style="paint-order:markers fill stroke"/> -->
+<text class="number"  x="17.105" y="208.27" >7</text>
+<!-- <rect x="24.722" y="203.19" width="25.391" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".21167" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="24.722" y="203.19" >хвилин до ринку та</text>
+    <!-- <rect x="24.722" y="208" width="25.391" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".21167" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="24.722" y="208" >автостанції "полісся"</text>
+
+
+
+<!-- <ellipse cx="51.583" cy="230.98" rx="6.4338" ry="6.701" fill="#f43698" stroke="#426478" stroke-width=".70763" style="paint-order:markers fill stroke"/> -->
+<text class="number"  x="51.583" y="230.98" >7</text>
+ <!-- <rect x="59.19" y="226.43" width="20.6" height="4.8315" fill="#f43616" stroke="#426478" stroke-width=".19107" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="59.19" y="226.43" >Хвилин</text>
+    <!-- <rect x="59.19" y="231.26" width="20.6" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".19066" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="59.19" y="231.26" >виїзду з міста</text>
+
+
+<!-- <ellipse cx="21.649" cy="262.52" rx="6.4338" ry="6.701" fill="#f43698" stroke="#426478" stroke-width=".70763" style="paint-order:markers fill stroke"/> -->
+<text class="number"  x="21.649" y="262.52" >3</text>
+<!-- <rect x="28.999" y="258.25" width="25.391" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".21167" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="28.999" y="258.25" >Хвилин до будівельних</text>
+    <!-- <rect x="28.999" y="263.06" width="25.391" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".21167" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="28.999" y="263.06" >гіпермаркетів "епіцентр"</text>
+    <!-- <rect x="28.999" y="267.87" width="25.391" height="4.8109" fill="#f43616" stroke="#426478" stroke-width=".21167" style="paint-order:markers fill stroke"/> -->
+    <text class="text"  x="28.999" y="267.87" >та «Leroy Merlin« на Полярній</text>
+</g>
+</svg>

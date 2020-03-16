@@ -1,0 +1,94 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Розташування';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/build.js')
+block content
+	.mini-title.mini-title_white.container
+		include ../includes/crumbs.pug
+		.heading
+			.heading__left
+				+svg('line-title')
+				h1.page-title Розташування
+	.placement
+		.placement__top
+			.block-img-left
+				.block-img-left__img2
+					img(class="thumbnail" src="./assets/images/placement/placement-bear.svg")
+				.block-img-left__img1
+					img(class="thumbnail" src="./assets/images/placement/img-left.png")
+			.placement__text.block-text
+				.block-text__title
+					span Краще місце для майбутнього 
+				.block-text__text
+					p Це чиста та простора локація, де у забудовника є свобода створити саме те, чого бажають власники квартир.
+				.block-text__line
+				.block-text__text-bold 
+					p місто Київ, 
+					p вулиця Сім’ї Кульженків, 22
+			.block-img-right
+				.block-img-right__img
+					img(class="mini-img" src="./assets/images/placement/img-right.png")
+				.block-img-right__link
+					a(href="/").read-more-block
+						img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+						span(class="read-more-block__text") Обрати квартиру
+		.placement__bottom.block-distance
+			.block-distance__item.block-distance__item1
+				.block-distance__number 10
+				.block-distance__text хвилин на авто до Пущі Водиці
+			.block-distance__item.block-distance__item2
+				.block-distance__number 3
+				.block-distance__text хв до ТРЦ «Караван», гіпермаркету «Ашан»
+			.block-distance__item.block-distance__item3
+				.block-distance__number 5
+				.block-distance__text хвилин до метро 
+			.block__star
+				img(src="./assets/images/star-placement.svg")
+			.block__star
+				img(src="./assets/images/star-placement.svg")
+			.block__star
+				img(src="./assets/images/star-placement.svg")
+			.block__star
+				img(src="./assets/images/star-placement.svg")
+			.block__star
+				img(src="./assets/images/star-placement.svg")
+			.block__star
+				img(src="./assets/images/star-placement.svg")
+			.block-distance__item.block-distance__item4
+				.block-distance__number 12
+				.block-distance__text хвилин до Вишгородської набережної
+			.block-distance__item.block-distance__item5
+				.block-distance__number 7
+				.block-distance__text хв до виїзду з міста, до ринку та автостанції «Полісся»
+			.block-distance__item.block-distance__item6
+				.block-distance__number 3
+				.block-distance__text хв до будівельних гіпермаркетів «Епіцентр» та «Leroy Merlin» на Полярній
+
+			
+					             
+						       
+
+				 
+			
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

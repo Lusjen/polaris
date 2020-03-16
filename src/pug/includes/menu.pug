@@ -1,0 +1,250 @@
+//- .js-menu.menu.visible--hidden.menu-bg-anim
+//- 	ul.mob-menu-list
+//- 			each val in arrMenu
+//- 				if val.child
+//- 					li.mob-menu-list__item.has-children 
+//- 						span.mob-menu-list__title= val.title
+//- 						ul.sub-mob-menu
+//- 							each v in val.subItems
+//- 								li
+//- 									a.sub-mob-menu__item(href= v.link )= v.title + v.title2
+
+//- 				else
+//- 					li.mob-menu-list__item
+//- 						a(href= val.link).mob-menu-list__title= val.title
+//- 	button.js-close-btn.cross-sircle
+//- 		+svg('cross-sircle')
+//- 	+img('logo-menu.svg').logo-menu
+-
+	// var arrMenu = [	
+	// 	{ title: 'Головна',
+	// 		submenu: [
+	// 			{
+	// 				title: "Про комплекс",
+	// 				link: pagesLink[0].about
+	// 			},
+	// 			{
+	// 				title: "Місцерозташування",
+	// 				link: pagesLink[0].location
+	// 			},
+	// 			{
+	// 				title: "Переваги",
+	// 				link: pagesLink[0].advantages
+	// 			}
+	// 		]
+	// 	},
+	// 	{ title: 'Про комплекс',
+	// 		submenu: [
+	// 			{
+	// 				title: "Інфраструктура",
+	// 				link: pagesLink[0].infrastructure
+	// 			},
+	// 			{
+	// 				title: "Документи",
+	// 				link: pagesLink[0].document
+	// 			},
+	// 			{
+	// 				title: "Галерея",
+	// 				link: pagesLink[0].media
+	// 			},
+	// 			{
+	// 				title: "Панорама",
+	// 				link: pagesLink[0].panorama
+	// 			},
+	// 			{
+	// 				title: "Забудовник",
+	// 				link: pagesLink[0].developer
+	// 			}
+	// 			{
+	// 				title: "Новости",
+	// 				link: pagesLink[0].news
+	// 			}
+	// 		]
+	// 	},
+	// 	{ title: 'Обрати квартиру',
+	// 		submenu: [
+	// 			{
+	// 				title: "За поверхом",
+	// 				link: pagesLink[0].house
+	// 			},
+	// 			{
+	// 				title: "За параметрами",
+	// 				link: pagesLink[0].filter
+	// 			},
+	// 			{
+	// 				title: "1-кімнатні",
+	// 				link: pagesLink[0].genplanSingle2
+	// 			},
+	// 			{
+	// 				title: "2-кімнатні",
+	// 				link: pagesLink[0].genplanSingle
+	// 			},
+	// 			{
+	// 				title: "3-кімнатні",
+	// 				link: pagesLink[0].storerooms
+	// 			},
+	// 			{
+	// 				title: "4-кімнатні",
+	// 				link: pagesLink[0].decoration
+	// 			},
+	// 			{
+	// 				title: "Комерційна нерухомість",
+	// 				link: pagesLink[0].decoration
+	// 			}
+	// 		]
+	// 	},
+	// 	{ title: 'Хід проекту',
+	// 		submenu: [
+	// 			{
+	// 				title: "Веб-камера",
+	// 				link: pagesLink[0].camera
+	// 			},
+	// 			{
+	// 				title: "Хід будівництва",
+	// 				link: pagesLink[0].internalnfrastructure
+	// 			}
+	// 		]
+	// 	},
+	// 	{ title: 'Контакти',
+	// 		submenu: [
+	// 			{
+	// 				title: "Розташування",
+	// 				link: pagesLink[0].camera
+	// 			},
+	// 			{
+	// 				title: "Зв'язок",
+	// 				link: pagesLink[0].internalnfrastructure
+	// 			},
+	// 		]
+	// 	}
+	// ];
+	var arrMenu = [	
+		{ title: 'Головна',
+			submenu: [
+				{
+					title: "Про комплекс",
+					link: pagesLink[0].about
+				},
+				{
+					title: "Місцерозташування",
+					link: pagesLink[0].location
+				},
+				{
+					title: "Переваги",
+					link: pagesLink[0].advantages
+				}
+			]
+		},
+		{ title: 'Про комплекс',
+			submenu: [
+				{
+					title: "Інфраструктура",
+					link: pagesLink[0].infrastructure
+				},
+				{
+					title: "Документи",
+					link: pagesLink[0].document
+				},
+				{
+					title: "Галерея",
+					link: pagesLink[0].gallery
+				},
+				{
+					title: "Панорама",
+					link: pagesLink[0].panorama
+				},
+				{
+					title: "Забудовник",
+					link: pagesLink[0].developer
+				},
+				{
+					title: "Новости",
+					link: pagesLink[0].news
+				}
+			]
+		},
+		{ title: 'Обрати квартиру',
+			submenu: [
+				{
+					title: "За поверхом",
+					link: pagesLink[0].chooseFloor
+				},
+				{
+					title: "За параметрами",
+					link: pagesLink[0].filter
+				},
+				{
+					title: "1-кімнатні",
+					link: pagesLink[0].kimnatni1
+				},
+				{
+					title: "2-кімнатні",
+					link: pagesLink[0].kimnatni2
+				},
+				{
+					title: "3-кімнатні",
+					link: pagesLink[0].kimnatni3
+				},
+				{
+					title: "4-кімнатні",
+					link: pagesLink[0].kimnatni4
+				},
+				{
+					title: "Комерційна нерухомість",
+					link: pagesLink[0].commerce
+				}
+			]
+		}
+	];
+.menu.js-menu
+	.menu__inner
+		.menu__wrap
+			.menu__title Меню
+			ul.menu-list
+				each val in arrMenu
+					li.menu-list__item
+						span.menu-list__title= val.title
+						ul.submenu-list
+							each subitem in val.submenu
+								li
+									a(href= subitem.link class="submenu-list__item")= subitem.title
+				li.menu-list__item
+					span.menu-list__title Хід проекту
+						ul.submenu-list
+							li
+								a(href="./camera.html" class="submenu-list__item is-active") Веб-камера
+							li
+								a(href="./build.html" class="submenu-list__item") Хід будівництва
+					span.menu-list__title Контакти
+						ul.submenu-list
+							li
+								a(href="./placement.html" class="submenu-list__item") Розташування
+							li
+								a(href="./contact.html" class="submenu-list__item") Зв'язок
+		.menu__img#line
+			include ../../assets/images/bear.svg
+		.menu__btn.btn-close.js-close
+			img(src="./assets/images/close.svg", alt="")
+	.menu__bottom
+		.menu__bottom-in
+			.menu__bottom-col
+				a(href="/").menu-contact
+					.menu-contact__icon
+						+svg('map')
+					.menu-contact__info м. Київ, вул. Вулиця, 45
+			.menu__bottom-col
+				a(href="tel:0445556525").menu-contact
+					.menu-contact__icon
+						+svg('tel')
+					.menu-contact__info 044 555 65 25
+			.menu__bottom-col
+				a(href="mailto:hi.polaris@gmail.com").menu-contact
+					.menu-contact__icon
+						+svg('mail')
+					.menu-contact__info hi.polaris@gmail.com
+
+
+
+
+
+

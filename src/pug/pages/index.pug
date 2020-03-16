@@ -1,0 +1,69 @@
+extends ../layout/main
+block variable
+	-
+		var arr = [];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	// script(src='./assets/scripts/home.js')
+	script(src='./assets/scripts/main.js') 
+	script(src='./assets/scripts/slider.js') 
+block content
+	section(class="main-screen-container" id="main-screen")
+		.main-screen-slider#images
+			.lighten
+				//- img(src="./assets/images/main-screen/stars1.png")
+				//- img(src="./assets/images/main-screen/evening-bg.png")
+				//- img(src="./assets/images/main-screen/day-stars.jpg")
+			.normal
+				img(src="./assets/images/main-screen/home.png")
+				img(src="./assets/images/main-screen/2.png")
+				img(src="./assets/images/main-screen/3.png")
+			p#loading
+			<nav>
+				<ul>
+				<li class="pre"></li>
+				<li class="next"></li>
+				</ul>
+			</nav>
+		div(class="main-screen main-screen-content")
+			.developers-block 
+				span Девелопери проекту:
+				a(href="https://perfect-group.com.ua" target="_blank").developer-logo1
+					img(class="developer-logo" src="./assets/images/perfect-logo.svg", alt="")
+				a(href="https://citex.com.ua" target="_blank").developer-logo2
+					img(class="developer-logo" src="./assets/images/citex-logo.svg", alt="")
+			.title-subtitle-wrap
+				.main-screen__subtitle POLARIS Home&Plaza
+				h1.main-screen__title  Зірковий рівень життя
+			a(href="#call-form-popup" data-effect="mfp-move-horizontal").read-more-block.js-call-form-popup
+				img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+				span.read-more-block__text ДІЗНАТИСЬ БІЛЬШЕ
+			.time-block
+				div(class="time-block__item time-block__day") 
+					span 01
+					<svg style="" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.08 28.08" xml:space="preserve"> 
+					<circle style="" cx="14.04" cy="14.04" r="13.54"></circle> </svg>
+				div(class="time-block__item time-block__evening") 
+					span 02
+					<svg style="" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.08 28.08" xml:space="preserve"> 
+					<circle style="" cx="14.04" cy="14.04" r="13.54"></circle> </svg>
+				div(class="time-block__item time-block__night") 
+					span 03
+					<svg style="" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.08 28.08" xml:space="preserve"> 
+					<circle style="" cx="14.04" cy="14.04" r="13.54"></circle> </svg>
+
+
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug
+

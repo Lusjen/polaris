@@ -1,0 +1,57 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Зв’язок';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4EBsCfQfnwCFGD_o8iLWwH97tmNCU-6E&callback=initMap")
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/contact.js')
+block content
+	.contact
+		.contact__inner
+			.mini-title.mini-title_white.container
+				include ../includes/crumbs-white.pug
+				.heading
+					.heading__left
+						+svg('line-title')
+						h1.page-title.page-link_wc Зв’язок
+			.contact__wrap.container
+				.contact__info
+					.contact__title Відділ продажів
+					.contact__list.list-contact
+						.list-contact__item
+							+svg('map')
+							span Україна, Київ, 02166 вулиця,<br> Вулиця, будинок 45
+						.list-contact__item
+							+svg('time')
+							span Пн-пт: 09.00 - 19.00<br> Сб-нд: 10.00 - 18.00
+					.contact__item
+						a(href="mailto:hi@polaris@gmail.com") hi@polaris@gmail.com
+						a(href="tel:+380445554545") (044) 555 45 45
+					a(href="mailto:hi@polaris@gmail.com").contact__email.email
+						.email__icon
+							+svg('mail-contact')
+						.email__text Написати нам
+			.contact__map
+				#map-contact.map-contact
+
+				
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

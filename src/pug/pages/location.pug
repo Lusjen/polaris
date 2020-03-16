@@ -1,0 +1,139 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Місцерозташування';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+block content
+	section.location-layout#location
+		div(class="mini-title mini-title_white container")
+			include ../includes/crumbs-white.pug
+			.heading
+				.heading__left
+					+svg('line-title')
+					h1.page-title.page-link_wc Місцерозташування
+		div(class="location container")
+			div(class="section-title_white section-title") Краще місце для майбутнього
+			.location-description__block
+				.location-description__head Разом з POLARIS відкривається можливість жити в одному з найбільш перспективних та привабливих куточків Оболонського району столиці (мікрорайон Мінського масиву). 
+				.location-description__subhead POLARIS має оптимальне місцерозташування – все знаходиться поруч і водночас саме в цій частині Оболоні немає перенаселення і ефекту «мурашника».
+				.location-description__subhead Це чиста та простора локація, де у забудовника є свобода створити саме те, чого бажають власники квартир. Є унікальна можливість придбати житло з панорамним краєвидом на озеро і парк. 
+			<svg class="location-star-map" width="100%" height="100%" version="1.1" viewBox="0 0 473.49 292.87" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g transform="translate(352.41 18.024)">
+				<g class="star-path" fill="none" stroke="#426478">
+					<path d="m-37.741 32.187 71.249-23.057" stroke-width=".26458px"/>
+					<path d="m-50.258 42.457-33.542 40.358" stroke-width=".26458px"/>
+					<path d="m-95.628 93.444-60.325 44.146" stroke-width=".29783px"/>
+					<path d="m-170.66 146.69-133.63 26.059" stroke-width=".26458px"/>
+					<path d="m-310.16 181.85 35.585 56.714" stroke-width=".30534px"/>
+					<path d="m-161.71 213.56-99.91 28.474" stroke-width=".30783px"/>
+					<path d="m-163.27 150.21 4.5956 49.741" stroke-width=".10873px"/>
+				</g>
+				<image class="shine" x="-323.6" y="-323.6" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+				<g class="location-group-left">
+				<text class="number"  x="49.731" y="5.3087" >5</text>
+				<text class="text"  x="70.731" y="-5.3087" >Хвилин</text>
+				<text class="text"  x="70.731" y="5.3087" >до метро</text>
+				<image class="shine" x="29.731" y="-5.3087" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+				</g>
+				<g class="location-group-right">
+				<text class="number" x="-56.33" y="23.556" >10</text> 
+				<text class="text" x="-22.33" y="13.556" >хвилин на авто </text> 
+				<text class="text" x="-22.33" y="23.556" >до Пущі Водиці</text> 
+				<image class="shine" x="-56.33" y="23.556" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+				</g>
+				<g class="location-group-left">
+				<text class="number" x="-100.7" y="75.941" >7</text>
+				<text class="text" x="-80.7" y="65.941" >хвилин до  </text>
+				<text class="text" x="-80.7" y="75.941" >виїзду з міста</text>
+				<image class="shine" x="-100.7" y="75.941" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+				</g>
+				<g class="location-group-right">
+				<text class="number" x="-175" y="124.93" >12</text>
+				<text class="text" x="-142" y="114.93" >хвилин до </text>
+				<text class="text" x="-142" y="124.93" >Вишгородської набережної</text>
+				<image class="shine" x="-175" y="129.93" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+				</g>
+				
+				<g class="location-group-left">
+				<text class="number" x="-156.98" y="197.28" >7</text>
+				<text class="text" x="-141.98" y="192.28" >хвилин до ринку </text>
+				<text class="text" x="-141.98" y="202.28" >та автостанції «Полісся» </text>
+				<image class="shine" x="-166.98" y="197.28" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+				</g>
+				<g class="location-group-right">
+				<text class="number" x="-270.3" y="247.56" >3</text>
+				<text class="text" x="-250.3" y="232.56">хвилин до будівельних  </text>
+				<text class="text" x="-250.3" y="242.56"> гіпермаркетів «Епіцентр» та </text>
+				<text class="text" x="-250.3" y="252.56">«Leroy Merlin« на Полярній</text>
+				<image class="shine" x="-280.3" y="232.56" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+				</g>
+				<g class="location-group-left">
+				<image class="shine" x="-320.731" y="165.56" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+				<text class="number" x="-300.731" y="195.56" >3</text>
+				<text class="text" x="-280.731" y="180.56" >хвилин до ТРЦ «Караван», </text>
+				<text class="text" x="-280.731" y="190.56" >гіпермаркету «Ашан»</text>
+				</g>
+				</g>
+			</svg>
+			<svg class="mob-location" width="100%" height="100%" version="1.1" viewBox="0 0 84.667 216.96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g transform="translate(-10 -80.042)">
+					<!-- stars -->
+					<image class="shine" x="20.446" y="95.612" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+					<image class="shine" x="55.859" y="121.14" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+					<image class="shine" x="14.7" y="141.18" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+					<!-- <ellipse cx="38.22" cy="172.19" rx="6.6229" ry="6.0884" fill="#3c3698" stroke="#426478" stroke-width=".062079" style="paint-order:markers fill stroke"/> -->
+					<image class="shine" x="38.22" y="172.19" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+					<image class="shine" x="13.096" y="202.65" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+					<image class="shine" x="47.307" y="225.37" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+					<image class="shine" x="17.64" y="256.64" width="23.636" height="23.636" preserveAspectRatio="none" xlink:href="./assets/images/location/loc-schema/star.svg"/>
+					<!-- numbers -->
+					<text class="number"  x="28.598" y="101.09" >10</text>
+						<text class="text"  x="38.487" y="98.151" >хвилин на авто</text>
+						<text class="text"  x="38.487" y="102.96" >до пущі водиці</text>
+					<text class="number"  x="57.868" y="126.75" >5</text>
+						<text class="text"  x="68.658" y="122.18" >Хвилин</text>
+						<text class="text"  x="68.658" y="127.04" >до метро</text>
+					<text class="number"  x="18.442" y="147.33" >3</text>
+						<text class="text"  x="25.013" y="142.27" >хвилин до трц "караван",</text>
+						<text class="text"  x="25.013" y="147.04" >гіпермаркету "ашан"</text>
+					<text class="number"  x="44.901" y="178.07" >12</text>
+						<text class="text"  x="54.924" y="173.79" >хвилин до</text>
+						<text class="text"  x="54.924" y="178.6" >вишгородської</text>
+						<text class="text"  x="54.924" y="183.41" >набережної</text>
+					<text class="number"  x="17.105" y="208.27" >7</text>
+						<text class="text"  x="24.722" y="203.19" >хвилин до ринку та</text>
+						<text class="text"  x="24.722" y="208" >автостанції "полісся"</text>
+					<text class="number"  x="51.583" y="230.98" >7</text>
+						<text class="text"  x="59.19" y="226.43" >Хвилин</text>
+						<text class="text"  x="59.19" y="231.26" >виїзду з міста</text>
+					<text class="number"  x="21.649" y="262.52" >3</text>
+						<text class="text"  x="28.999" y="258.25" >Хвилин до будівельних</text>
+						<text class="text"  x="28.999" y="263.06" >гіпермаркетів "епіцентр"</text>
+						<text class="text"  x="28.999" y="267.87" >та «Leroy Merlin« на Полярній</text>
+				</g>
+			</svg>
+			// .location-bottom-block 
+			// 	.location-bottom-block__title Зручно під'їхати в ТРЦ Dream Town
+			// 	.location-bottom-block__description
+			// 		p Житловий комплекс знаходиться поруч з великою транспортною розв'язкою, зупинкою громадського транспорту та в 5 хвилинах на авто чи маршрутці до станцій метро Оболонь, Мінська, Героїв Сталінграда.
+			// 		p В кількох кварталах від будинку проходять різні маршрути громадського транспорту, що дозволяють без проблем дістатися будь-якої точки Києва. За додатковим розвагами і шопінгом звідси зручно під'їхати в ТРЦ Dream Town.
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

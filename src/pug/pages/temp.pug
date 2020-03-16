@@ -1,0 +1,27 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Наши объекты';
+		var crumbs = [
+		];
+	
+block meta
+	title= titlePage
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/obj.js')
+block content
+	.container
+		include ../includes/title.pug
+		
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug
+

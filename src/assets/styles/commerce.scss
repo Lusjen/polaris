@@ -1,0 +1,317 @@
+.commerce {
+	padding-left: 45px;
+	@include to(1200px) {
+		padding-left: 20px;
+	}
+	@include to(767px) {
+		padding-left: 10px;
+	}
+}
+
+.investment {
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+	max-width: 1195px;
+	margin: 0 auto 113px;
+	@include to(1200px) {
+		justify-content: space-between;
+		margin: 0 auto 80px;
+	}
+	@include to(767px) {
+		display: block;
+		padding-top: 0;
+		margin: 0 auto 40px;
+	}
+	&__img {
+		width: 37%;
+		position: relative;
+		padding-left: 65px;
+		@include to(1200px) {
+			padding-left: 0px;
+			width: 45%;
+		}
+		@include to(767px) {
+			width: 100%;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			top: 80px;
+			width: calc(100% - 65px);
+			height: 90%;
+			background-color: $yellow;
+			@include to(1200px) {
+				left: -20px;
+			}
+			@include to(767px) {
+				display: none;
+			}
+		}
+	}
+	&__info {
+		width: 43%;
+		padding-left: 95px;
+		@include to(1200px) {
+			width: 48%;
+			padding-left: 10px;
+		}
+		@include to(767px) {
+			padding-left: 0;
+			width: 100%;
+			.block-text {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.non-residential {
+	max-width: 1200px;
+	margin: 0 auto 70px;
+	padding: 106px 0;
+	@include to(1200px) {
+		padding: 46px 0 26px;
+		margin: 0 auto 60px;
+	}
+	@include to(767px) {
+		padding: 30px 0 26px;
+		margin: 0 auto 40px;
+	}
+
+	&__title {
+		max-width: 460px;
+		margin-bottom: 60px;
+		@include to(1200px) {
+			margin-bottom: 0;
+		}
+		@include to(767px) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.list-commerce {
+	display: flex;
+	justify-content: space-between;
+	// &__item {
+	// 	width: 25%;
+	// }
+	// @include to(1200px) {
+	// 	display: grid;
+	// 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	// 	grid-template-rows: 1fr;
+	// }
+	@include to(1200px) {
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	@include to(767px) {
+		display: block;
+	}
+ 	&__info {
+		text-align: center;
+		@include to(767px) {
+			text-align: left;
+		}
+	}
+	&__title {
+		max-width: 172px;
+		margin: 0 auto;
+		font-family: $default-font2;
+		font-size: 20px;
+		color: $darkBlue;
+		line-height: 1.6;
+		margin-bottom: 5px;
+		@include to(1200px) {
+			font-size: 18px;
+		}
+		@include to(767px) {
+			font-size: 16px;
+		}
+	}
+	&__text {
+		max-width: 160px;
+		margin: 0 auto;
+		color: $text1;
+		font-size: 12px;
+		line-height: 1.7;
+		margin-bottom: 20px;
+	}
+	&__icon {
+		margin: 0 auto 20px;
+		@include to(767px) {
+			margin: 0 20px 0 0;
+		}
+	}
+	&__icon1 {
+		width: 123px;
+		@include to(1200px) {
+			width: 185px;
+		}
+		@include to(767px) {
+			width: 90px;
+		}
+	}
+	&__icon2 {
+		width: 149px;
+		@include to(767px) {
+			width: 90px;
+		}
+	}
+	&__icon3 {
+		width: 193px;
+		@include to(1200px) {
+			width: 103px;
+		}
+		@include to(767px) {
+			width: 90px;
+		}
+	}
+	&__icon4 {
+		width: 163px;
+		@include to(1200px) {
+			width: 185px;
+		}
+		@include to(767px) {
+			width: 90px;
+		}
+	}
+	&__icon5 {
+		width: 125px;
+		@include to(1200px) {
+			width: 149px;
+		}
+		@include to(767px) {
+			width: 90px;
+		}
+	}
+	&__item1 {
+		@include to(1200px) {
+			order: -1;
+			width: 45%;
+			display: flex;
+			flex-direction: column-reverse;
+			transform: translateY(-50px);
+		}
+		@include to(767px) {
+			width: 100%;
+			transform: translateY(0px);
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+		}
+	}
+	&__item3 {
+		@include to(1200px) {
+			order: -2;
+			width: 45%;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		@include to(767px) {
+			width: 100%;
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+		}
+		
+	}
+	&__item2 {
+		@include to(1200px) {
+			position: absolute;
+			left: 50%;
+			top: 43%;
+			transform: translateX(-50%);
+		}
+		@include to(767px) {
+			position: relative;
+			display: flex;
+		}
+		
+	}
+	&__item4 {
+		@include to(767px) {
+			display: flex;
+		}
+	}
+	&__item5 {
+		@include to(1200px) {
+			order: -1;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		@include to(767px) {
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+		}
+	}
+}
+
+.commerce-info {
+	max-width: 920px;
+	margin: 0 auto 70px;
+	padding: 55px 50px;
+	box-shadow: 0px 30px 50px rgba(8, 33, 70, 0.15);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@include to(1200px) {
+		padding: 55px 40px;
+	}
+	@include to(767px) {
+		display: block;
+		padding: 35px 22px;
+		margin: 0 auto 50px;
+	}
+	&__tel {
+		font-family: $default-font2;
+		font-size: 22px;
+		color: $darkBlue;
+		max-width: 280px;
+		line-height: 1.5;
+		position: relative;
+		margin: 0 45px;
+		@include to(1200px) {
+			font-size: 18px;
+		}
+		@include to(767px) {
+			margin: 0;
+			font-size: 16px;
+			margin-bottom: 36px;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			right: -60px;
+			height: 109px;
+			width: 1px;
+			background-color: $text;
+			@include to(1200px) {
+				display: none;
+			}
+		}
+		a {
+			text-decoration: none;
+			color: $darkBlue;
+		}
+		.icon--tel {
+			width: 13px;
+			height: 13px;
+			fill: $yellow;
+			margin-right: 11px;
+		}
+	}
+	&__title {
+		margin-bottom: 10px;
+	}
+	&__email {
+		flex-shrink: 0;
+	}
+	&__logo {
+		@include to(767px) {
+			display: none;
+		}
+	}
+}

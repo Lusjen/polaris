@@ -1,0 +1,33 @@
+
+.header__in
+	.header__left
+		a(href="/" class="logo")
+			img(src="./assets/images/logo.svg" id="logo" alt="" title="" data-tablet="./assets/images/logo-tablet.svg" data-mob="./assets/images/logo-mob.svg")
+		.developer-project
+			.developer-project__title Девелопери проекту:
+			.developer-project__logo
+				a(href="/")
+					img(src="./assets/images/perfect-logo.svg", alt="")
+				a(href="/")
+					img(src="./assets/images/citex-logo.svg", alt="")
+	.header__right
+		.lang-tel
+			.tel-block
+				a(href="tel:0445556525").header-phone__icon
+					+svg('tel')
+				.inner-wrap
+					a(href="tel:0445556525").header-phone__link  (044) 555 65 25
+					a(href="#call-form-popup" data-effect="mfp-move-horizontal").hover-underline.underline-color--white.js-call-form-popup.header__call-form-popup замовити дзвінок
+			.lang-block
+				div(class="lang-block__item") укр
+				div(class="lang-block__item inactive") рус
+				div(class="lang-block__item inactive") eng
+		.menu-btn
+			.line 
+				.line__top
+				.line__star
+					+svg('star')
+				.line__center
+				.line__bottom
+
+

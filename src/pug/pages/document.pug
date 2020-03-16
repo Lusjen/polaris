@@ -1,0 +1,123 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Документи';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/document.js')
+block content
+	.document
+		.mini-title.mini-title_white.container
+			include ../includes/crumbs-white.pug
+			.heading
+				.heading__left
+					+svg('line-title')
+					h1.page-title.page-link_wc Документи
+		.container
+			.row-tabs.row-tabs_sm.row-tabs_pd
+				.col-sm.date
+					//begin date__item
+					.date__item.js-btn(data-year="0")
+						.date__icon 
+							+svg('star')
+						.date__name 2020
+					//end date__item
+					//begin date__item
+					.date__item.is-active_wc.js-btn(data-year="1")
+						.date__icon
+							+svg('star')
+						.date__name 2019
+					//end date__item
+					//begin date__item
+					.date__item.js-btn(data-year="2")
+						.date__icon
+							+svg('star')
+						.date__name 2018
+					//end date__item
+				.col-lg.document-list
+					.document-list__in.is-active.js-list
+						//begin document-item
+						.document-item
+							.document-item__info
+								.document-item__date 21.09.2019
+								.document-item__name Дозвіл на будівельні роботи
+							a(href="/" target="_blank").document-item__icon
+								img(class="read-more-block__icon" src="./assets/images/arrow-star.svg" alt="read-more")
+						//end document-item
+						//begin document-item
+						.document-item
+							.document-item__info
+								.document-item__date 21.09.2019
+								.document-item__name Дозвіл на будівельні роботи
+							a(href="/" target="_blank").document-item__icon
+								img(class="read-more-block__icon" src="./assets/images/arrow-star.svg" alt="read-more")
+						//end document-item
+						//begin document-item
+						.document-item
+							.document-item__info
+								.document-item__date 21.09.2019
+								.document-item__name Дозвіл на будівельні роботи
+							a(href="/" target="_blank").document-item__icon
+								img(class="read-more-block__icon" src="./assets/images/arrow-star.svg" alt="read-more")
+						//end document-item
+						//begin document-item
+						.document-item
+							.document-item__info
+								.document-item__date 21.09.2019
+								.document-item__name Дозвіл на будівельні роботи
+							a(href="/" target="_blank").document-item__icon
+								img(class="read-more-block__icon" src="./assets/images/arrow-star.svg" alt="read-more")
+						//end document-item
+						//begin document-item
+						.document-item
+							.document-item__info
+								.document-item__date 21.09.2019
+								.document-item__name Дозвіл на будівельні роботи
+							a(href="/" target="_blank").document-item__icon
+								img(class="read-more-block__icon" src="./assets/images/arrow-star.svg" alt="read-more")
+						//end document-item
+					.document-list__in.js-list
+						//begin document-item
+						.document-item
+							.document-item__info
+								.document-item__date 21.09.2019
+								.document-item__name Дозвіл на будівельні роботи
+							a(href="/" target="_blank").document-item__icon
+								img(class="read-more-block__icon" src="./assets/images/arrow-star.svg" alt="read-more")
+						//end document-item
+						//begin document-item
+						.document-item
+							.document-item__info
+								.document-item__date 21.09.2019
+								.document-item__name Дозвіл на будівельні роботи
+							a(href="/" target="_blank").document-item__icon
+								img(class="read-more-block__icon" src="./assets/images/arrow-star.svg" alt="read-more")
+						//end document-item
+						//begin document-item
+						.document-item
+							.document-item__info
+								.document-item__date 21.09.2019
+								.document-item__name Дозвіл на будівельні роботи
+							a(href="/" target="_blank").document-item__icon
+								img(class="read-more-block__icon" src="./assets/images/arrow-star.svg" alt="read-more")
+						//end document-item
+			
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

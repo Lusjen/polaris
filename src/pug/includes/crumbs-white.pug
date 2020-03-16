@@ -1,0 +1,6 @@
+
+ul(class="breadcrumb")
+	each val in crumbs
+		li
+			a(href= val.link class="link_wc")= val.title
+	li= titlePage

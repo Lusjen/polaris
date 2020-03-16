@@ -1,0 +1,118 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Галерея';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+block meta
+	title= 'Галерея'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/gallery.js')
+	// script(src='./assets/scripts/infrastructure.js')
+block content
+	.mini-title.container
+		include ../includes/crumbs.pug
+		.heading
+			.heading__left
+				+svg('line-title')
+				h1.page-title Галерея
+			.heading__right.mob-hidden
+				a(href="./choose-floor.html").read-more-block
+					img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+					span(class="read-more-block__text read-more-block__text_dark") ОБРАТИ КВАРТИРУ
+	.gallery-content.drop
+		.obj-filter-wrap
+			ul.obj-filter
+				li(data-filter="office").active.js-obj-filter.obj-filter__item Офіси
+				li(data-filter="flat").js-obj-filter.obj-filter__item Квартири
+				li(data-filter="comm").js-obj-filter.obj-filter__item Архітектура
+				li(data-filter="social").js-obj-filter.obj-filter__item Вхідна група
+		.obj-filter-wrap_mob.js-drop(data-drop-height='64')
+			.drop__inner
+				.info-title.js-drop-back Офіси
+				.info-close
+					img(src="./assets/images/close.svg")
+				.mark-list
+					ul.mark-list__in
+						li(data-filter="office").active.js-obj-filter.obj-filter__item Офіси
+						li(data-filter="flat").js-obj-filter.obj-filter__item Квартири
+						li(data-filter="comm").js-obj-filter.obj-filter__item Архітектура
+						li(data-filter="social").js-obj-filter.obj-filter__item Вхідна група
+		.gallery.js-slideshow
+			.gallery__in.js-obj-items(data-param='office').active
+				.js-gallery.slides-row.sliding-items
+					.gallery__items
+						img(src="./assets/images/gallery/1.png")
+					.gallery__items
+						img(src="./assets/images/gallery/1.png")
+					.gallery__items
+						img(src="./assets/images/commerce/1.png")
+					.gallery__items
+						img(src="./assets/images/commerce/1.png")
+				.slide-controls
+					a(role="button" class="slide-arrow arrow-prev" title="Previous slide")
+						img(src="./assets/images/gallery/prev-arrow.svg")
+					a(role="button" class="slide-arrow arrow-next" title="Next slide")
+						img(src="./assets/images/gallery/next-arrow.svg")
+			.gallery__in.js-obj-items(data-param='flat')
+				.js-gallery.slides-row.sliding-items
+					.gallery__items
+						img(src="./assets/images/gallery/1.png")
+					.gallery__items
+						img(src="./assets/images/gallery/1.png")
+				.slide-controls
+					a(role="button" class="slide-arrow arrow-prev" title="Previous slide")
+						img(src="./assets/images/gallery/prev-arrow.svg")
+					a(role="button" class="slide-arrow arrow-next" title="Next slide")
+						img(src="./assets/images/gallery/next-arrow.svg")
+			.gallery__in.js-obj-items(data-param='comm')
+				.js-gallery.slides-row.sliding-items
+					.gallery__items
+						img(src="./assets/images/gallery/1.png")
+					.gallery__items
+						img(src="./assets/images/gallery/1.png")
+					.gallery__items
+						img(src="./assets/images/commerce/1.png")
+					.gallery__items
+						img(src="./assets/images/commerce/1.png")
+				.slide-controls
+					a(role="button" class="slide-arrow arrow-prev" title="Previous slide")
+						img(src="./assets/images/gallery/prev-arrow.svg")
+					a(role="button" class="slide-arrow arrow-next" title="Next slide")
+						img(src="./assets/images/gallery/next-arrow.svg")
+			.gallery__in.js-obj-items(data-param='social')
+				.js-gallery.slides-row.sliding-items
+					.gallery__items
+						img(src="./assets/images/gallery/1.png")
+					.gallery__items
+						img(src="./assets/images/gallery/1.png")
+				.slide-controls
+					a(role="button" class="slide-arrow arrow-prev" title="Previous slide")
+						img(src="./assets/images/gallery/prev-arrow.svg")
+					a(role="button" class="slide-arrow arrow-next" title="Next slide")
+						img(src="./assets/images/gallery/next-arrow.svg")
+	.gallery__info
+		.gallery-block
+			.gallery-block__text Яку саме квартиру ви хочете?
+			.gallery-block__link
+				a(href="./choose-floor.html").read-more-block
+					img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+					span(class="read-more-block__text read-more-block__text_dark") ОБРАТИ КВАРТИРУ
+
+
+
+block footer
+	footer.footer
+		include ../includes/footer.pug
+block header
+	header.header
+		include ../includes/header.pug
+

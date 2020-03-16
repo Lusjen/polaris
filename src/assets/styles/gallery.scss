@@ -1,0 +1,319 @@
+.gallery {
+  position: relative;
+
+  &__items {
+    height: 0;
+    // height: 680px;
+    // @include to(767px){
+    //   height: 245px;
+    // } 
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    padding: 50px 0 70px;
+    @include to(1200px){
+      padding: 30px 0 60px;
+    }
+    @include to(767px){
+      padding: 20px 10px 50px;
+    } 
+  } 
+}
+  .slide-controls {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    z-index: 1;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    align-items: center;
+    justify-content: flex-end;
+    @include to(1200px) {
+      bottom: 60px;
+    }
+    @include to(767px) {
+      justify-content: space-between;
+      right: 10px;
+      left: 10px;
+      bottom: 10px;
+    }
+    .slide-arrow {
+      cursor: pointer;
+      transition: all 0.5s;
+      flex-shrink: 0;
+      img {
+        display: block;
+      }
+      &:focus,
+      &:hover {
+        transform: translateX(10px);
+      }
+    }
+
+    // custom slick dots
+    .custom-dots {
+      padding-left: 0;
+      margin: 0 50px;
+      @include to(767px) {
+         margin: 0;
+         text-align: center;
+      }
+      li {
+        margin: 0 7px 0 7px;
+        display: inline-block;
+        list-style: none;
+        // &:first-child {
+        //   margin-left: 0;
+        // }
+      }
+      .dot {
+        display: block;
+       background: url(../images/gallery/star-slider.svg);
+       width: 19px;
+       height: 19px;
+        cursor: pointer;
+
+        .string {
+          position: absolute;
+          left: -99999px;
+          line-height: 0;
+          opacity: 0;
+        }
+      }
+      // active slide
+      .slick-active .dot {
+        background: url(../images/gallery/star-slider-active.svg);
+      }
+      // hover event
+      .dot:hover,
+      .custom-dots .slick-active .dot:hover {
+        background: url(../images/gallery/star-slider-active.svg);
+       }
+    }
+  }
+  .arrow-next {
+    order: 1;
+  }
+.gallery-block {
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 67px 45px;
+  box-shadow: 0px 30px 50px rgba(8, 33, 70, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include to(1200px) {
+    padding: 43px 85px;
+  }
+  @include to(767px){
+    display: block;
+    padding: 30px 21px;
+    text-align: center;
+  } 
+  &__text {
+    font-family: $default-font2;
+    font-size: 22px;
+    color: $darkBlue;
+    line-height: 1.5;
+    @include to(1200px) {
+      width: 50%;
+      font-size: 26px;
+    }
+    @include to(767px){
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 17px;
+    } 
+  }
+  &__link {
+    @include to(767px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+
+.gallery__in {
+  position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      opacity: 0;
+      visibility: hidden;
+      width: 100%;
+      height: 100%;
+      &.active {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+      }
+      & .slick-dots {
+            // position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 50px;
+            @include to(767px) {
+              margin: 0 5px;
+            }
+        }
+
+        & .slick-dots li {
+            margin: 0 10px;
+            width: 18px;
+            height: 18px;
+            display: block;
+            border-radius: 50%;
+            // border: 1px solid red;
+            padding: 0;
+            background: #fff;
+            transform: scale(1);
+            transition: transform .5s;
+             background: url(../images/gallery/star-slider.svg) no-repeat;
+             background-size: contain;
+             @include to(767px) {
+              width: 10px;
+              height: 10px;
+             }
+        }
+
+        & .slick-dots li button {
+            opacity: 0;
+        }
+
+        & .slick-dots .slick-active {
+            transform: scale(1.5);
+            // background-color: red;
+            background: url(../images/gallery/star-slider-active.svg) no-repeat;
+            background-size: contain;
+        }
+
+}
+
+.gallery-content {
+  position: relative;
+  @include to(767px) {
+    margin-bottom: 64px;
+  }
+}
+.obj-filter {
+  display: inline-block;
+  pointer-events: all;
+  // margin: 0 auto;
+  left: 0px;
+  right: 0;
+  color: $white;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 2;
+  // width: 300px;
+  &__item {
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+    &.active {
+      @include to(767px) {
+        color: #426478;
+      }
+    }
+    @include to(767px) {
+      padding-left: 0px;
+      color: #DAE3E7;
+      text-align: left;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 13px;
+      height: 13px;
+      background: url('../images/star.svg') no-repeat;
+      display: none;
+      @include to(767px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.active.obj-filter__item:before {
+  display: block;
+  @include to(767px) {
+    display: none;
+  }
+}
+.obj-filter-wrap {
+  pointer-events: none;
+  position: absolute;
+  left: 0%;
+  bottom: 30px;
+  z-index: 30;
+  max-width: 1140px;
+  margin: 0 auto;
+  right: 0;
+  padding: 0 20px;
+  @include to(1200px) {
+    bottom: 55px;
+  }
+   @include to(767px) {
+    display: none;
+  }
+  // @include to(767px) {
+  //     height: 64px;
+  //     width: 100%;
+  //     text-align: center;
+  //     // position: relative;
+  //     position: absolute;
+  //     left: 0;
+  //     bottom: -64px;
+  //     width: 353px;
+  //     z-index: 100;
+  //     background-color: #ffffff;
+  //     overflow: hidden;
+  //     transition: height .3s;
+  // }
+}
+
+.active .gallery__items {
+    height: 680px;
+    @include to(767px){
+      height: 245px;
+    } 
+}
+
+.obj-filter-wrap_mob {
+  display: none;
+  @include to(767px) {
+      display: block;
+      height: 64px;
+      width: 100%;
+      text-align: center;
+      // position: relative;
+      position: absolute;
+      left: 0;
+      bottom: -64px;
+      width: 100%;
+      z-index: 100;
+      background-color: #ffffff;
+      overflow: hidden;
+      transition: height .3s;
+  }
+}

@@ -1,0 +1,73 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Для клієнтів POLARIS  працює трансфер до відділу продажу';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			},
+			{
+				title: 'Новини',
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/tabs.js')
+block content
+	.news-single
+		.mini-title.mini-title_white.container
+			include ../includes/crumbs.pug
+			.heading
+				.heading__left
+					+svg('line-title')
+					h1.page-title Для клієнтів POLARIS  працює трансфер до відділу продажу
+		.container
+			.news-single__wrap
+				.news-single__img
+					img(src="./assets/images/news/news.png")
+				.news-single__top
+					.news-single__right 21.09.2019
+					.news-singlr__left 
+						.news-single__description
+							p Збираєтесь відвідати наш відділ продажу? Телефонуйте за номером, вказаним на сайті та замовляйте трансфер прямісінько до дверей офісу. Для вашої зручності до POLARIS Home&Plaza курсують автомобілі — у будні з 9.00 до 19.00, у вихідні з 10.00 до 18.00.
+							p Ми — за чисте довкілля та збереження природних ресурсів, саме тому для трансферу обрали екологічні електрокари Nissan LEAF.
+							p Чекаємо на вас за адресою: Харківське шосе, 22 км, щоб детальніше розповісти про проект, допомогти вам обрати планування квартири та влаштувати екскурсію мальовничою локацією POLARIS Home&Plaza.
+						.news-single__links
+							a(href='./news.html').link-back
+								+svg('arrow-back')
+								span Повернутись до новин
+							a(href="./choose-floor.html").read-more-block
+								img(class="read-more-block__icon" src="./assets/images/common/read-more-icon.svg", alt="read-more")
+								span(class="read-more-block__text read-more-block__text_dark") ОБРАТИ КВАРТИРУ
+				.news-single__img1
+					.block-title News
+			.related-news
+				.related-news__title Схожі новини
+				.related-news__wrap
+					.related-news__item.related-news__item1
+						.related-news__date 21.09.2019
+						a(href="/").related-news__subtitle Для клієнтів POLARIS  працює трансфер до відділу продажу
+					.related-news__item.related-news__item2
+						.related-news__date 21.09.2019
+						a(href="/").related-news__subtitle Для клієнтів POLARIS  працює трансфер до відділу продажу
+					.related-news__item.related-news__item3
+						.related-news__date 21.09.2019
+						a(href="/").related-news__subtitle Для клієнтів POLARIS  працює трансфер до відділу продажу
+					.related-news__item.related-news__item4
+						.related-news__date 21.09.2019
+						a(href="/").related-news__subtitle Для клієнтів POLARIS  працює трансфер до відділу продажу
+			
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

@@ -1,0 +1,92 @@
+<svg id="floor--svg" viewBox="0 0 828 238" version="1.0" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                                <image xlink:href="https://devbase.smarto.com.ua/img/projects/2/1/full-plan-1564737591-1100x85-1573643148-1100x85-.png" x="0" y="0" height="100%" width="100%"></image><a data-type="1.1К" data-rooms="1К" data-image="/img/projects/2/1/53_47-tip-1_1-x85-500.jpg" data-color="color--reserved" data-price_m="43 000" data-square="53.47" data-price="2 299 210" data-floor="3" data-flat_id="11548" data-num="№ 6" data-text="Забронировано" class="entrance-flats__item-js js-hover-mini-flat-item js-open-tab plan-floor-appartment">
+											<polygon class="floor-svg-polygon fill-color--reserved entrance-flats__item_floor--active" points="276,233,276,233,278,4,278,4,417,7,417,7,414,93,414,93,399,94,399,94,399,124,399,124,389,123,389,123,388,237,388,237"></polygon>
+											<symbol id="qwer0" viewBox="0 0 80 30" class="svg-tip-plan-floor">
+												<path class="u-st0" d="M65,1H15C7.3,1,1,7.3,1,15s6.3,14,14,14h50c7.7,0,14-6.3,14-14S72.7,1,65,1z"></path>
+												<path class="u-st1" d="M65,0H15C6.7,0,0,6.7,0,15c0,8.3,6.7,15,15,15h50c8.3,0,15-6.7,15-15C80,6.7,73.3,0,65,0z M65,29H15
+													C7.3,29,1,22.7,1,15S7.3,1,15,1h50c7.7,0,14,6.3,14,14S72.7,29,65,29z"></path>
+												<circle class="color--reserved" cx="17" cy="15" r="9.5"></circle>
+												<rect x="8" y="10.8" class="u-st3" width="18.3" height="7.8"></rect>
+												<text transform="matrix(1 0 0 1 11.8252 18.3863)" class="u-st6 u-st4 u-st5">1к</text>
+												<text transform="matrix(1 0 0 1 30.9188 19)" class="u-st6 u-st7 u-st5">53.47м<tspan y="-3.5" style="font-size: 0.7em" class="g-kva">2</tspan></text>
+											</symbol>
+											<symbol id="qwery0" viewBox="0 0 28 28">
+												<circle class="little-cir-st0" cx="14" cy="14" r="14"></circle>
+												<circle class="color--reserved" cx="14" cy="14" r="10"></circle>
+												<text transform="matrix(1 0 0 1 8.6602 16.4624)" class="little-cir-st2 little-cir-st3 little-cir-st4">1к</text>
+											</symbol>
+											<use x="10" y="10" width="118.28571428571429" height="63.69230769230769" xlink:href="#qwer0" class="svg-tip-plan-floor--big svg-tip-plan-floor-0"></use>
+											<use x="" y="" width="118.28571428571429" height="63.69230769230769" xlink:href="#qwery0" class="svg-tip-plan-floor--small svg-tip-plan-floor-0"></use>
+									  </a><a data-type="1.2К" data-rooms="1К" data-image="/img/projects/2/1/58_45-tip-1_2-x85-500.jpg" data-color="color--reserved" data-price_m="43 000" data-square="58.45" data-price="2 513 350" data-floor="3" data-flat_id="11566" data-num="№ 7" data-text="Забронировано" class="entrance-flats__item-js js-hover-mini-flat-item js-open-tab plan-floor-appartment">
+											<polygon class="floor-svg-polygon fill-color--reserved entrance-flats__item_floor--active" points="234,565,234,565,234,565,234,565,301,475,301,475,301,475,301,475,202,461,202,461,202,461,202,461,181,529,181,529,181,529,181,529"></polygon>
+											<symbol id="qwer1" viewBox="0 0 80 30" class="svg-tip-plan-floor">
+												<path class="u-st0" d="M65,1H15C7.3,1,1,7.3,1,15s6.3,14,14,14h50c7.7,0,14-6.3,14-14S72.7,1,65,1z"></path>
+												<path class="u-st1" d="M65,0H15C6.7,0,0,6.7,0,15c0,8.3,6.7,15,15,15h50c8.3,0,15-6.7,15-15C80,6.7,73.3,0,65,0z M65,29H15
+													C7.3,29,1,22.7,1,15S7.3,1,15,1h50c7.7,0,14,6.3,14,14S72.7,29,65,29z"></path>
+												<circle class="color--reserved" cx="17" cy="15" r="9.5"></circle>
+												<rect x="8" y="10.8" class="u-st3" width="18.3" height="7.8"></rect>
+												<text transform="matrix(1 0 0 1 11.8252 18.3863)" class="u-st6 u-st4 u-st5">1к</text>
+												<text transform="matrix(1 0 0 1 30.9188 19)" class="u-st6 u-st7 u-st5">58.45м<tspan y="-3.5" style="font-size: 0.7em" class="g-kva">2</tspan></text>
+											</symbol>
+											<symbol id="qwery1" viewBox="0 0 28 28">
+												<circle class="little-cir-st0" cx="14" cy="14" r="14"></circle>
+												<circle class="color--reserved" cx="14" cy="14" r="10"></circle>
+												<text transform="matrix(1 0 0 1 8.6602 16.4624)" class="little-cir-st2 little-cir-st3 little-cir-st4">1к</text>
+											</symbol>
+											<use x="181.85714285714286" y="481.15384615384613" width="118.28571428571429" height="63.69230769230769" xlink:href="#qwer1" class="svg-tip-plan-floor--big svg-tip-plan-floor-1"></use>
+											<use x="181.85714285714286" y="481.15384615384613" width="118.28571428571429" height="63.69230769230769" xlink:href="#qwery1" class="svg-tip-plan-floor--small svg-tip-plan-floor-1"></use>
+									  </a><a data-type="1.5К" data-rooms="1К" data-image="/img/projects/2/1/50_52-tip-1_5-i-1_6-x85-500.jpg" data-color="color--free" data-price_m="43 000" data-square="50.52" data-price="2 172 360" data-floor="3" data-flat_id="11620" data-num="№ 140" data-text="Свободно" class="entrance-flats__item-js js-hover-mini-flat-item js-open-tab plan-floor-appartment">
+											<polygon class="floor-svg-polygon fill-color--free entrance-flats__item_floor--active" points="416,94,419,8,552,8,551,238,496,237,494,138,450,138,446,126,432,123,431,94"></polygon>
+											<symbol id="qwer2" viewBox="0 0 80 30" class="svg-tip-plan-floor">
+												<path class="u-st0" d="M65,1H15C7.3,1,1,7.3,1,15s6.3,14,14,14h50c7.7,0,14-6.3,14-14S72.7,1,65,1z"></path>
+												<path class="u-st1" d="M65,0H15C6.7,0,0,6.7,0,15c0,8.3,6.7,15,15,15h50c8.3,0,15-6.7,15-15C80,6.7,73.3,0,65,0z M65,29H15
+													C7.3,29,1,22.7,1,15S7.3,1,15,1h50c7.7,0,14,6.3,14,14S72.7,29,65,29z"></path>
+												<circle class="color--free" cx="17" cy="15" r="9.5"></circle>
+												<rect x="8" y="10.8" class="u-st3" width="18.3" height="7.8"></rect>
+												<text transform="matrix(1 0 0 1 11.8252 18.3863)" class="u-st6 u-st4 u-st5">1к</text>
+												<text transform="matrix(1 0 0 1 30.9188 19)" class="u-st6 u-st7 u-st5">50.52м<tspan y="-3.5" style="font-size: 0.7em" class="g-kva">2</tspan></text>
+											</symbol>
+											<symbol id="qwery2" viewBox="0 0 28 28">
+												<circle class="little-cir-st0" cx="14" cy="14" r="14"></circle>
+												<circle class="color--free" cx="14" cy="14" r="10"></circle>
+												<text transform="matrix(1 0 0 1 8.6602 16.4624)" class="little-cir-st2 little-cir-st3 little-cir-st4">1к</text>
+											</symbol>
+											<use x="424.85714285714283" y="91.15384615384616" width="118.28571428571429" height="63.69230769230769" xlink:href="#qwer2" class="svg-tip-plan-floor--big svg-tip-plan-floor-2"></use>
+											<use x="424.85714285714283" y="91.15384615384616" width="118.28571428571429" height="63.69230769230769" xlink:href="#qwery2" class="svg-tip-plan-floor--small svg-tip-plan-floor-2"></use>
+									  </a><a data-type="2.4К" data-rooms="2К" data-image="/img/projects/2/1/74_02--tip-2_3-it2_4-x85-500.jpg" data-color="color--free" data-price_m="41 300" data-square="74.02" data-price="3 057 030" data-floor="3" data-flat_id="11677" data-num="№ 142" data-text="Свободно" class="entrance-flats__item-js js-hover-mini-flat-item js-open-tab plan-floor-appartment">
+											<polygon class="floor-svg-polygon fill-color--free entrance-flats__item_floor--active" points="141,6,141,6,277,4,277,4,279,237,279,237,220,231,220,231,222,134,222,134,169,136,169,136,162,123,162,123,158,123,158,123,154,93,154,93,143,89,143,89"></polygon>
+											<symbol id="qwer3" viewBox="0 0 80 30" class="svg-tip-plan-floor">
+												<path class="u-st0" d="M65,1H15C7.3,1,1,7.3,1,15s6.3,14,14,14h50c7.7,0,14-6.3,14-14S72.7,1,65,1z"></path>
+												<path class="u-st1" d="M65,0H15C6.7,0,0,6.7,0,15c0,8.3,6.7,15,15,15h50c8.3,0,15-6.7,15-15C80,6.7,73.3,0,65,0z M65,29H15
+													C7.3,29,1,22.7,1,15S7.3,1,15,1h50c7.7,0,14,6.3,14,14S72.7,29,65,29z"></path>
+												<circle class="color--free" cx="17" cy="15" r="9.5"></circle>
+												<rect x="8" y="10.8" class="u-st3" width="18.3" height="7.8"></rect>
+												<text transform="matrix(1 0 0 1 11.8252 18.3863)" class="u-st6 u-st4 u-st5">2к</text>
+												<text transform="matrix(1 0 0 1 30.9188 19)" class="u-st6 u-st7 u-st5">74.02м<tspan y="-3.5" style="font-size: 0.7em" class="g-kva">2</tspan></text>
+											</symbol>
+											<symbol id="qwery3" viewBox="0 0 28 28">
+												<circle class="little-cir-st0" cx="14" cy="14" r="14"></circle>
+												<circle class="color--free" cx="14" cy="14" r="10"></circle>
+												<text transform="matrix(1 0 0 1 8.6602 16.4624)" class="little-cir-st2 little-cir-st3 little-cir-st4">2к</text>
+											</symbol>
+											<use x="150.85714285714286" y="88.65384615384616" width="118.28571428571429" height="63.69230769230769" xlink:href="#qwer3" class="svg-tip-plan-floor--big svg-tip-plan-floor-3"></use>
+											<use x="150.85714285714286" y="88.65384615384616" width="118.28571428571429" height="63.69230769230769" xlink:href="#qwery3" class="svg-tip-plan-floor--small svg-tip-plan-floor-3"></use>
+									  </a><a data-type="3.3К" data-rooms="3К" data-image="/img/projects/2/1/117_46--tip-3_2-i-3_3-x85-500.jpg" data-color="color--reserved" data-price_m="35 500" data-square="117.46" data-price="4 169 830" data-floor="3" data-flat_id="11715" data-num="№ 143" data-text="Забронировано" class="entrance-flats__item-js js-hover-mini-flat-item js-open-tab plan-floor-appartment">
+											<polygon class="floor-svg-polygon fill-color--reserved entrance-flats__item_floor--active" points="3,234,3,234,4,6,4,6,140,4,140,4,143,93,143,93,126,93,126,93,123,124,123,124,115,124,115,124,114,236,114,236"></polygon>
+											<symbol id="qwer4" viewBox="0 0 80 30" class="svg-tip-plan-floor">
+												<path class="u-st0" d="M65,1H15C7.3,1,1,7.3,1,15s6.3,14,14,14h50c7.7,0,14-6.3,14-14S72.7,1,65,1z"></path>
+												<path class="u-st1" d="M65,0H15C6.7,0,0,6.7,0,15c0,8.3,6.7,15,15,15h50c8.3,0,15-6.7,15-15C80,6.7,73.3,0,65,0z M65,29H15
+													C7.3,29,1,22.7,1,15S7.3,1,15,1h50c7.7,0,14,6.3,14,14S72.7,29,65,29z"></path>
+												<circle class="color--reserved" cx="17" cy="15" r="9.5"></circle>
+												<rect x="8" y="10.8" class="u-st3" width="18.3" height="7.8"></rect>
+												<text transform="matrix(1 0 0 1 11.8252 18.3863)" class="u-st6 u-st4 u-st5">3к</text>
+												<text transform="matrix(1 0 0 1 30.9188 19)" class="u-st6 u-st7 u-st5">117.46м<tspan y="-3.5" style="font-size: 0.7em" class="g-kva">2</tspan></text>
+											</symbol>
+											<symbol id="qwery4" viewBox="0 0 28 28">
+												<circle class="little-cir-st0" cx="14" cy="14" r="14"></circle>
+												<circle class="color--reserved" cx="14" cy="14" r="10"></circle>
+												<text transform="matrix(1 0 0 1 8.6602 16.4624)" class="little-cir-st2 little-cir-st3 little-cir-st4">3к</text>
+											</symbol>
+											<use x="13.857142857142854" y="88.15384615384616" width="118.28571428571429" height="63.69230769230769" xlink:href="#qwer4" class="svg-tip-plan-floor--big svg-tip-plan-floor-4"></use>
+											<use x="13.857142857142854" y="88.15384615384616" width="118.28571428571429" height="63.69230769230769" xlink:href="#qwery4" class="svg-tip-plan-floor--small svg-tip-plan-floor-4"></use>
+									  </a></svg>

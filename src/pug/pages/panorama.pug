@@ -1,0 +1,35 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Панорама';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+block content
+	.mini-title.container
+		include ../includes/crumbs.pug
+		.title-wrap
+			+svg('line-title')
+			h1.page-title Панорама
+	.panorama.container
+		// <iframe class="camera__video" src="/wp-content/themes/washington/include/panorama/pannellum.htm#panorama=/wp-content/themes/washington/assets/img/panorama/4_1.jpg&autoLoad=true" frameborder="0"></iframe>
+		iframe(src="./panorama/pannellum.htm#panorama=../assets/images/panorama/10_1.jpg&autoLoad=true" frameborder="0").camera__video
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug
+

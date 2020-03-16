@@ -1,0 +1,162 @@
+.camera {
+	position: relative;
+	@include to(767px){ 
+		padding-bottom: 100px;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 34%;
+		height: 100%;
+		background-color: $yellow;
+		@include to(767px){ 
+			content: none;
+		}
+	}
+	&__icon {
+		position: absolute;
+		left: -100px;
+		bottom: 30px;
+		@include to(1200px) {
+			left: -185px;
+		    bottom: -97px;
+		    transform: rotate(-10deg);
+		}
+		@include to(767px) {
+			width: 200px;
+			left: -15px;
+		    bottom: -161px;
+		    transform: rotate(-10deg);
+		}
+	}
+}
+
+.row-tabs {
+	// max-width: 1000px;
+	padding: 0 60px 0 120px;
+	margin: 0 auto;
+	display: flex;
+	position: relative;
+	// padding-bottom: 40px;
+	@include to(1200px){ 
+		padding: 0;
+	}
+	@include to(767px){ 
+		flex-direction: column;
+		padding: 0;
+		height: auto;
+	}
+	&_mb {
+		@include to(767px){
+			margin-bottom: 100px;
+		}
+	}
+	&_hg {
+		height: 1275px;
+		@include to(767px){ 
+			height: auto;
+		}
+	}
+	&_sm {
+		height: 450px;
+		// @include to(767px){ 
+		// 	height: auto;
+		// }
+		@include to(767px){ 
+			height: 380px;
+		}
+	}
+	&_pd {
+		@include to(1200px) {
+			padding-right: 40px;
+		}
+		@include to(767px) {
+			padding-right: 0px;
+		}
+	}
+	.col-sm {
+		// width: 19%;
+		margin-right: 50px;
+		flex-shrink: 0;
+		@include to(767px){ 
+			width: 100%;
+			display: flex;
+		}
+		&_or {
+			@include to(767px){
+				order: 1;
+			}
+		}
+	}
+	.col-lg {
+		width: 81%;
+		@include to(767px){ 
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+	
+.video-list {
+	overflow: hidden;
+	position: relative;
+	&__in {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    opacity: 0;
+	    visibility: hidden;
+	    width: 100%;
+	    height: 100%;
+		// overflow-y: scroll;
+		// height: 690px;
+		&::-webkit-scrollbar-thumb {
+			background: $yellow;
+		}
+		&::-webkit-scrollbar-thumb {
+			-webkit-box-shadow: none;
+		}
+		&::selection {
+				background-color: $yellow;
+			color: #fff;
+		}
+		&::-webkit-scrollbar {
+			width: 3px;
+			@include to(767px){ 
+				width: 0px;
+			}
+		}
+		&.is-active {
+			position: relative;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.video {
+	margin-bottom: 70px;
+	@include to(1200px){ 
+		margin-bottom: 80px;
+	}
+	@include to(767px){ 
+		margin-bottom: 10px;
+	}
+	&__in {
+		width: 100%;
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+		iframe, video {
+			width: 100%;
+			position: absolute;
+		    top: 0; left: 0;
+		    width: 100%;
+		    height: 100%;
+		    border: none;
+		}
+	}
+}

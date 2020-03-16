@@ -1,0 +1,51 @@
+<svg width="100%" height="100%" viewBox="0 0 264.84793 184.94376" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g transform="translate(-101.92 -150.86)">
+		<image x="101.92" y="150.86" width="264.85" height="184.94" preserveAspectRatio="none" xlink:href="./assets/images/house.png"/>
+		<g>
+			<a xlink:href="./floor.html" class="floor-item-link" data-level="0" data-sale="13" data-href="choise-apartment.php">
+				<path d="m217.2 327.29v-13.04l61.799-4.7247 27.781 1.5119-0.37797 18.332-26.836 0.18899z"/>
+			</a>
+			<a xlink:href="./floor.html" class="floor-item-link" data-level="0" data-sale="5" data-href="choise-apartment.php">
+				<path d="m233.08 312.18v-8.1265l45.735-5.6696 22.301 1.8899 0.37798 10.016-22.49-0.75596z"/>
+			</a>
+			<a xlink:href="./floor.html" class="floor-item-link" data-level="1" data-sale="6" data-href="choise-apartment.php">
+				<path d="m233.08 304.05 0.0716-9.6768 45.436-7.4836 22.852 2.5391-0.32325 10.842-22.301-1.8899z"/>
+			</a>
+			<a xlink:href="" class="floor-item-link" data-level="2" data-sale="8" data-href="choise-apartment.php">
+				<path d="m233.15 294.37 0.26727-9.3544 45.169-9.6217 22.451 2.5391 0.4009 11.493-22.852-2.5391z"/>
+			</a>
+			<a xlink:href="" class="floor-item-link" data-level="3" data-sale="13" data-href="choise-apartment.php">
+				<path d="m233.42 285.02v-9.0872l44.901-11.893 22.985 2.5391-0.26727 11.359-22.451-2.5391z"/>
+			</a>
+			<a xlink:href="" class="floor-item-link" data-level="4" data-sale="13" data-href="choise-apartment.php">
+				<path d="m233.42 275.93v-9.3544l44.634-14.299 23.119 2.94 0.13364 11.359-22.985-2.5391z"/>
+			</a>
+			<a xlink:href="" class="floor-item-link" data-level="5" data-sale="13" data-href="choise-apartment.php">
+				<path d="m233.42 266.58-0.13364-9.4881 45.169-16.704 22.718 3.2072v11.626l-23.119-2.94z"/>
+			</a>
+			<a xlink:href="" class="floor-item-link" data-level="6" data-sale="13" data-href="choise-apartment.php">
+				<path d="m233.28 257.09v-9.4881l45.035-19.511 23.252 4.2763-0.4009 11.225-22.718-3.2072z"/>
+			</a>
+			<a xlink:href="" class="floor-item-link" data-level="7" data-sale="13" data-href="choise-apartment.php">
+				<path d="m233.28 247.6 0.26727-9.2208 45.703-23.921 22.05 5.3454 0.26726 12.562-23.252-4.2763z"/>
+			</a>
+			<a xlink:href="" class="floor-item-link" data-level="8" data-sale="13" data-href="choise-apartment.php">
+				<path d="m233.55 238.38v-9.7553l45.035-26.192 22.584 6.0136 0.13364 11.359-22.05-5.3454z"/>
+			</a>
+			<a xlink:href="" class="floor-item-link" data-level="9" data-sale="13" data-href="choise-apartment.php">
+				<path d="m233.55 228.62 0.13364-9.6217 45.169-28.331 22.451 6.5481-0.13364 11.225-22.584-6.0136z"/>
+			</a>
+			<a xlink:href="" class="floor-item-link" data-level="10" data-sale="13" data-href="choise-apartment.php">
+				<path d="m233.69 219v-8.8199l44.768-30.469 22.985 6.4145-0.13363 11.092-22.451-6.5481z"/>
+			</a>
+
+			<a xlink:href="" class="floor-item-link" data-level="11" data-sale="13" data-href="choise-apartment.php">
+				<path d="m233.69 210.18-0.53454-10.023 45.169-34.344 23.119 7.0826v13.23l-22.985-6.4145z"/>
+			</a>
+
+			<a xlink:href="" class="floor-item-link" data-level="12" data-sale="13" data-href="choise-apartment.php">
+				<path d="m235.56 198.02-0.53454-9.6217 35.547-29.801 25.524 7.3499v5.479l-17.773-5.6127z"/>
+			</a>
+		</g>
+	</g>
+</svg>

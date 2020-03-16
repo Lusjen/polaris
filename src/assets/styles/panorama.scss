@@ -1,0 +1,13 @@
+.panorama {
+	width: 100%;
+	height: calc(100vh - 253px);
+	margin-bottom: 60px;
+	@include to(767px) {
+		height: 240px;
+		margin-bottom: 40px;
+	}
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+}

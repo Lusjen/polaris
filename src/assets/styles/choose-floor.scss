@@ -1,0 +1,255 @@
+.floor-choose {
+  position: relative;
+  @include to(767px) {
+      display: flex;
+      flex-direction: column;
+  }
+  &__info {
+    position: absolute;
+    top: 0;
+    padding: 30px 0;
+    left: 120px;
+    @include to(1200px) {
+      position: relative;
+        padding: 5px 0 30px;
+        left: 0;
+    }
+    @include to(767px) {
+      order: 1;
+    }
+  }
+}
+.floor-choose__img {
+  // height: 100vh;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .floor-choose__img:before {
+    content: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .floor-choose__img {
+    height: auto;
+  }
+}
+
+.floor-choose__img svg {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .floor-choose__img svg {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .floor-choose__img svg {
+    height: auto;
+  }
+}
+
+.floor__title {
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .floor__title {
+    margin-bottom: 15px;
+  }
+}
+
+.floor__description {
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.floor__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  width: 48%;
+}
+
+@media only screen and (max-width: 450px) {
+  .floor__item {
+    width: 100%;
+  }
+}
+
+.floor__icon {
+  min-width: 30px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.floor__text {
+  line-height: 2;
+}
+
+.floor__link {
+  margin-bottom: 20px;
+}
+
+.floor__link svg {
+  width: 19px;
+  height: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .floor__link svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.floor-choose__info-block {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 156px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .floor-choose__info-block {
+    right: 46px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .floor-choose__info-block {
+    display: none;
+  }
+}
+
+.floor__arrow {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .floor__arrow {
+    right: 60px;
+    top: 25%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .floor__arrow {
+    right: 30px;
+  }
+}
+
+.info-block-floor-choose {
+  background: #0C2537;
+  color: #ffffff;
+  padding: 5px 5px 20px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          opacity: 0;
+}
+
+.info-block-choose__item {
+  white-space: nowrap;
+}
+
+.info-block-choose__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.info-block-floor,
+.info-block-appartments {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.floor-item-link path {
+  fill: $yellow;
+  opacity: 0;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+}
+
+.floor-item-link:hover path {
+  opacity: .6;
+}
+
+.floor-choose__img a {
+  display: block;
+  height: 100%;
+}
+
+.info-block-choose__item:first-child {
+  font-size: 14px;
+  font-weight: 600;
+}
+.info-block-choose__item:last-child {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.info-block-floor {
+  font-size: 46px;
+  font-family: $default-font2;
+  color: $yellow;
+}
+
+.floor-choose__icon {
+  max-width: 155px;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  @include to(767px) {
+    display: none;
+  }
+  .tooltip {
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.7;
+    color: $darkBlue;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.info-floor {
+  display: flex;
+  align-items: center;
+  @include to(767px) {
+    flex-wrap: wrap;
+  }
+  &__link {
+    display: block;
+    color: $darkBlue;
+    margin-bottom: 7px;
+  }
+  &__col {
+    margin-right: 20px;
+    @include to(767px) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px
+    }
+    &_mob {
+      @include to(767px) {
+        width: 50%;
+        order: 1;
+      }
+     }
+  }
+}

@@ -1,0 +1,64 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Веб-камера';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/tabs.js')
+block content
+	.camera
+		.mini-title.mini-title_white.container
+			include ../includes/crumbs.pug
+			.heading
+				.heading__left
+					+svg('line-title')
+					h1.page-title Веб-камера
+		.container
+			.row-tabs
+				.col-sm.date.col-sm_or
+					//begin date__item
+					.date__item.date__item_gr.is-deactive.js-btn(data-year="0")
+						.date__icon 
+							+svg('star')
+						.date__name.date__name_sm Камера №1
+					//end date__item
+					//begin date__item
+					.date__item.date__item_gr.is-active.js-btn(data-year="1")
+						.date__icon
+							+svg('star')
+						.date__name.date__name_sm Камера №2
+					//end date__item
+				.col-lg.video-list
+					.video-list__in.is-active.js-list
+						//begin video
+						.video
+							.video__in
+								include ../includes/video-review1.html
+						//end video
+					.video-list__in.js-list
+						//begin video
+						.video
+							.video__in
+						//end video
+				.camera__icon
+					img(src='./assets/images/bear-camera.png')
+			
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug

@@ -1,0 +1,163 @@
+extends ../layout/main
+block variable
+	-
+		var titlePage = 'Хід будівництва';
+		var crumbs = [
+			{
+				title: 'Головна',
+				link: pagesLink[0].home
+			}
+		];
+	
+block meta
+	title= 'Home'
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(src='./assets/scripts/index.js')
+	script(src='./assets/scripts/build.js')
+block content
+	.build
+		.mini-title.mini-title_white.container
+			include ../includes/crumbs.pug
+			.heading
+				.heading__left
+					+svg('line-title')
+					h1.page-title Хід будівництва
+		.container
+			.build-info
+				.build-info__title.title-md Завершення робіт
+				.build-info__row
+					.build-info__text.text
+						p Завершено влаштування паль у 1-й секції. Тривають роботи з влаштування свердловин водозниження: виконано 9 шт., у роботі 3 шт. З шести свердловин проводиться відкачування грунтових вод. Виконується робота з планування території та вивезення грунту.
+						p.text_bold-gray Запланований час завершення будівництва: 3 квартал 2021 року.
+					.build-info__progress
+						.build-status
+							span.build-status__title Будівництво
+							.build-status__value 25%
+							.build-status__progress-bar
+								.build-status__progress-bar-completed.construction-js(data-width="25%")
+						.build-status
+							span.build-status__title Благоустрій:
+							.build-status__value 36%
+							.build-status__progress-bar
+								.build-status__progress-bar-completed.construction-js(data-width="36%")
+						.build-status
+							span.build-status__title Фасад:
+							.build-status__value 18%
+							.build-status__progress-bar
+								.build-status__progress-bar-completed.construction-js(data-width="18%")
+						.build-status
+							span.build-status__title Мережі:
+							.build-status__value 27%
+							.build-status__progress-bar
+								.build-status__progress-bar-completed.construction-js(data-width="27%")
+			.build-info-filter
+				.build-filter
+					.select-box
+						.select-box__top
+							.filter-group#year.filter-group_fl
+								.filter-group__item.filter-group__item-year.js-year(data-year-value="2019") 2019
+								.filter-group__item.filter-group__item-year.js-year(data-year-value="2020").is-active 2020
+						.select__bottom
+							.filter-group#month
+								.filter-group__item.js-month(data-month-value="1") Січень            
+								.filter-group__item.js-month(data-month-value="2") Лютий 
+								.filter-group__item.js-month(data-month-value="3") Березень
+								.filter-group__item.js-month(data-month-value="4") Квітень
+								.filter-group__item.js-month(data-month-value="5") Травень
+								.filter-group__item.js-month(data-month-value="6") Червень
+								.filter-group__item.js-month(data-month-value="7") Липень
+								.filter-group__item.js-month(data-month-value="8") Серпень 
+								.filter-group__item.js-month(data-month-value="9") Вересень
+								.filter-group__item.js-month(data-month-value="10").is-active Жовтень
+								.filter-group__item.js-month.js-deactive(data-month-value="11") Листопад 
+								.filter-group__item.js-month.js-deactive(data-month-value="12") Грудень
+							.custom-select-wrap.month-js
+								.custom-select(data-month-value="2") Лютий
+								.custom-option-block
+									.custom-option(data-month-value="1") Січень
+									.custom-option(data-month-value="2") Лютий
+									.custom-option(data-month-value="3") Березень
+									.custom-option(data-month-value="4") Квітень
+									.custom-option(data-month-value="5") Травень
+									.custom-option(data-month-value="6") Червень
+									.custom-option(data-month-value="7") Липень
+									.custom-option(data-month-value="8") Серпень
+									.custom-option(data-month-value="9") Вересень
+									.custom-option(data-month-value="10") Жовтень
+									.custom-option(data-month-value="11") Листопад
+									.custom-option(data-month-value="12") Грудень
+					.photogallery
+						// .gallery-genplan__btn-prev.js-gallery-prev.page-link.page-link_left.page-link_pink
+						// 	.page-link__icon
+						// 		svg(class="svg-icon")
+						// 			use(xlink:href="#icon-arrow")
+						// .gallery-genplan__btn-next.js-gallery-next.page-link.page-link_right.page-link_pink
+						// 	.page-link__icon
+						// 		svg(class="svg-icon")
+						// 			use(xlink:href="#icon-arrow")
+						.photogallery__item(data-year="2020")(data-month="10").is-active
+							.photogallery__info
+								.photogallery__title Жовтень 2020
+								.photogallery__text.text
+									p Завершено влаштування паль у 1-й секції. Тривають роботи з влаштування свердловин водозниження.
+							.photogallery__slider
+								.news_item.slider-for.slider-gallery.js-slider-gallery
+									a(href="./assets/images/gallery/1.png").slider-gallery__item(data-title="Город Мира - это новый микрорайон Симферополя, долгожданный масштабный проект.")
+										img(src='./assets/images/gallery/1.png' alt="" title="")
+									a(href="./assets/images/gallery/1.png").slider-gallery__item(data-title="Город Мира")
+										img(src='./assets/images/gallery/1.png' alt="" title="")
+									a(href="./assets/images/gallery/1.png").slider-gallery__item(data-title="Город Мира")
+										img(src='./assets/images/gallery/1.png' alt="" title="")
+									a(href="./assets/images/gallery/1.png").slider-gallery__item(data-title="Город Мира")
+										img(src='./assets/images/gallery/1.png' alt="" title="")
+								.gallery__counter
+								.gallery__btns
+									.gallery__btn-next.js-gallery-next
+										img(src="./assets/images/gallery/next-arrow.svg")
+									.gallery__btn-prev.js-gallery-prev
+										img(src="./assets/images/gallery/prev-arrow.svg")
+							// .slider-nav
+							// 	.slider-nav__item Город Мира - это новый микрорайон Симферополя, долгожданный масштабный проект.
+							// 	.slider-nav__item Город Мира - это новый микрорайон Симферополя, долгожданный масштабный проект.
+							// 	.slider-nav__item Город Мира - это новый микрорайон Симферополя, долгожданный масштабный проект.
+							// 	.slider-nav__item Город Мира - это новый микрорайон Симферополя, долгожданный масштабный проект.
+						.photogallery__item(data-year="2020")(data-month="9")
+							.photogallery__info
+								.photogallery__title Вересень 2020
+								.photogallery__text.text
+									p Завершено влаштування паль у 1-й секції. Тривають роботи з влаштування свердловин водозниження.
+							.photogallery__slider
+								.news_item.slider-for.slider-gallery.js-slider-gallery
+									a(href="./assets/images/about/about2.jpg").slider-gallery__item(data-title="Город Мира")
+										img(src='./assets/images/about/about2.jpg' alt="" title="")
+									a(href="./assets/images/about/about2.jpg").slider-gallery__item(data-title="Город Мира")
+										img(src='./assets/images/about/about2.jpg' alt="" title="")
+									a(href="./assets/images/about/about2.jpg").slider-gallery__item(data-title="Город Мира")
+										img(src='./assets/images/about/about2.jpg' alt="" title="")
+								.gallery__counter
+								.gallery__btns
+									.gallery__btn-next.js-gallery-next
+										img(src="./assets/images/gallery/next-arrow.svg")
+									.gallery__btn-prev.js-gallery-prev
+										img(src="./assets/images/gallery/prev-arrow.svg")
+								// .slider-nav
+								// 	.slider-nav__item Город Мира 
+								// 	.slider-nav__item Город Мира 
+								// 	.slider-nav__item Город Мира 
+
+				
+						             
+						       
+
+				 
+			
+block footer
+	footer.footer
+		include ../includes/footer.pug
+
+block header
+	header.header
+		include ../includes/header.pug
